@@ -5,6 +5,7 @@
 - **111명**의 큐레이션 목록: 시대 8개(스윙, 비밥, 쿨, 하드밥, 모달, 프리, 퓨전, 현대 재즈) × 악기 7개(색소폰, 트럼펫, 피아노, 보컬, 베이스, 드럼, 기타)
 - 목록을 다 돌기 전까지는 같은 아티스트가 다시 나오지 않고, 시대나 악기가 전날과 겹치지 않게 고릅니다.
 - 사실 정보(이름, 활동 시기, 악기, 곡명·앨범·연도)는 JSON에서 가져오고, **Claude는 설명 문장만** 씁니다.
+- 아티스트마다 직접 정리한 **흥미로운 이야기** 하나와 관련 위키백과 링크, 그리고 **아티스트 위키백과 링크**(한국어판이 있으면 함께)를 붙입니다. 이 부분은 Anthropic 키가 없어도 나갑니다.
 - ytmusicapi로 링크를 찾고, 실패하면 YouTube Data API v3로 다시 찾습니다. 그래도 없으면 "링크 없음"으로 표시하고 발송은 그대로 진행합니다.
 - 봇 명령어: `/today`, `/random`, `/history`
 - (선택) 내 YouTube Music 계정의 **"Daily Jazz"** 플레이리스트에 매일 곡을 자동으로 추가합니다.
@@ -22,6 +23,7 @@
 │   ├── history.py     # 발송 기록(data/history.json)
 │   ├── writer.py      # Claude API로 한국어 소개문 생성(실패 시 템플릿)
 │   ├── youtube.py     # ytmusicapi → YouTube Data API 대체 검색, 플레이리스트
+│   ├── wiki.py        # 위키백과 문서 확인·한국어판 찾기 (python -m jazzbot.wiki 로 전체 검증)
 │   ├── telegram.py    # Telegram Bot API 클라이언트(재시도 포함)
 │   ├── formatter.py   # HTML 메시지와 인라인 버튼 만들기
 │   ├── service.py     # 선택 → 생성 → 링크까지 공통 흐름
@@ -37,6 +39,7 @@
 ├── .github/workflows/
 │   ├── daily-jazz.yml    # 매일 08:00 KST 발송
 │   ├── bot-commands.yml  # 30분마다 쌓인 봇 명령 처리
+│   ├── verify-data.yml   # 큐레이션의 위키백과 제목 검증
 │   └── tests.yml
 ├── requirements.txt
 └── .env.example
@@ -203,7 +206,9 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
 3. 남은 인원이 많은 시대일수록 뽑힐 확률을 높여, 순환 후반에 특정 시대만 몰리지 않게 합니다.
 4. 같은 날짜로 다시 실행하면 같은 아티스트가 나오고, 이미 보낸 날은 `--force` 없이는 건너뜁니다.
 
-**소개문 생성** (`jazzbot/writer.py`): 큐레이션 JSON의 사실 정보를 Claude에게 넘기고 `intro`(3~5문장: 음악적 특징, 재즈사적 의의, 일화 하나), `track_points`(곡별 감상 포인트), `starter_reason`(입문 추천 이유)만 JSON 스키마(structured outputs)로 받습니다. 곡명·앨범·연도는 메시지에 JSON 값이 그대로 들어가므로 모델이 바꿀 수 없습니다. API 오류, 거절, 형식 오류가 나면 템플릿 문장으로 대신 보냅니다.
+**소개문 생성** (`jazzbot/writer.py`): 큐레이션 JSON의 사실 정보를 Claude에게 넘기고 `intro`(3~4문장: 음악적 특징, 재즈사적 의의), `track_points`(곡별 감상 포인트), `starter_reason`(입문 추천 이유)만 JSON 스키마(structured outputs)로 받습니다. 곡명·앨범·연도는 메시지에 JSON 값이 그대로 들어가므로 모델이 바꿀 수 없습니다. API 오류, 거절, 형식 오류가 나면 템플릿 문장으로 대신 보냅니다.
+
+**이야기와 위키백과** (`jazzbot/wiki.py`): 일화는 사실 확인이 중요해서 Claude가 지어내지 않고 큐레이션 JSON의 `story.text`를 그대로 씁니다. 발송할 때 Wikipedia API로 `wiki`(아티스트 문서)와 `story.wiki`(일화 관련 문서)가 실제로 있는지 확인하고, 한국어판이 있으면 한국어 링크를 우선 붙입니다. 관련 문서가 없으면 아티스트 문서로 대신하고, 위키백과 확인 자체가 실패해도 영문 링크를 만들어 발송은 계속합니다. `data/artists.json`을 고치면 `Verify curation` 워크플로가 모든 제목을 자동으로 검증합니다.
 
 **링크 검색** (`jazzbot/youtube.py`): `"<연주자> <곡명>"`으로 ytmusicapi에서 songs, 다음으로 videos를 검색합니다. 제목 유사도와 아티스트 일치 여부로 점수를 매기고, 기준을 넘는 결과가 없으면 YouTube Data API로 다시 검색합니다. 둘 다 실패한 곡은 "링크 없음"으로 표시하고 버튼을 달지 않습니다. 찾은 videoId는 `https://music.youtube.com/watch?v=<id>`로 바꿔 붙입니다.
 
@@ -229,7 +234,12 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
     {"title": "Pursuance", "album": "A Love Supreme", "year": 1965,
      "performer": "John Coltrane"}        // 리더가 다른 녹음이면 검색에 쓸 연주자명
   ],
-  "starter": 0                          // 입문 추천곡 인덱스(0~2)
+  "starter": 0,                         // 입문 추천곡 인덱스(0~2)
+  "wiki": "Miles Davis",                // 영문 위키백과 문서 제목
+  "story": {
+    "text": "1959년 Kind of Blue 녹음 날, ...",   // 메시지에 그대로 나가는 일화
+    "wiki": "Kind of Blue"              // 일화 관련 영문 위키백과 문서 제목
+  }
 }
 ```
 
@@ -239,7 +249,7 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
 
 ## 💬 실제 발송 메시지 예시
 
-`examples/sample_entry.json`(Miles Davis)을 `jazzbot/formatter.py`로 렌더링한 결과입니다. 텔레그램에서는 아래처럼 보입니다. 링크 ID는 예시용 자리표시자이고, ③번은 링크를 찾지 못한 경우를 보여 줍니다.
+`examples/sample_entry.json`(Miles Davis)을 `jazzbot/formatter.py`로 렌더링한 결과입니다. 텔레그램에서는 아래처럼 보입니다. YouTube 링크 ID는 예시용 자리표시자이고, ③번은 링크를 찾지 못한 경우를 보여 줍니다. 한국어 위키백과 문서가 있는 아티스트는 위키백과 줄에 "한국어 · English"가 함께 나옵니다.
 
 > 🎷 **오늘의 재즈 아티스트** · 10월 12일 (월)
 >
@@ -248,7 +258,11 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
 > 🎹 주 악기: 트럼펫
 > 🎼 장르/스타일: 모달 재즈 · 모달 재즈 (쿨·하드밥·퓨전 전반)
 >
-> Miles Davis는 쿨 재즈, 하드밥, 모달 재즈, 퓨전까지 재즈의 흐름이 바뀌는 순간마다 그 중심에 섰던 트럼페터입니다. 비브라토를 거의 쓰지 않는 담백한 톤과 음을 아끼는 여백의 미학으로, 화려한 속주보다 '무엇을 연주하지 않을지'를 고민한 연주자로 꼽힙니다. 1959년작 Kind of Blue는 복잡한 코드 진행 대신 몇 개의 스케일(모드) 위에서 즉흥연주하는 모달 재즈의 문을 열었고, 지금도 가장 많이 팔린 재즈 앨범 중 하나로 남아 있습니다. 녹음 당일 멤버들은 간단한 스케치만 받아 거의 리허설 없이 연주했고, 대부분의 곡이 첫 테이크로 완성됐다는 일화가 유명합니다.
+> Miles Davis는 쿨 재즈, 하드밥, 모달 재즈, 퓨전까지 재즈의 흐름이 바뀌는 순간마다 그 중심에 섰던 트럼페터입니다. 비브라토를 거의 쓰지 않는 담백한 톤과 음을 아끼는 여백의 미학으로, 화려한 속주보다 '무엇을 연주하지 않을지'를 고민한 연주자로 꼽힙니다. 1959년작 Kind of Blue는 복잡한 코드 진행 대신 몇 개의 스케일(모드) 위에서 즉흥연주하는 모달 재즈의 문을 열었습니다.
+>
+> 📖 **흥미로운 이야기**
+> 1959년 Kind of Blue 녹음 날, 멤버들은 간단한 스케치만 받아 거의 리허설 없이 연주했고 대부분의 곡이 첫 테이크로 완성됐습니다. 이 앨범은 지금도 가장 많이 팔린 재즈 앨범 중 하나입니다.
+> 🔗 [Wikipedia: Kind of Blue](https://en.wikipedia.org/wiki/Kind_of_Blue)
 >
 > 🎧 **대표곡**
 > ① **So What**
@@ -269,8 +283,11 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
 > 🔰 **이 곡부터 들어보세요:** So What
 > 단 두 개의 모드 위에서 진행돼 재즈가 처음이어도 흐름을 따라가기 쉽고, 트럼펫·색소폰·피아노 솔로마다 연주자의 개성이 또렷하게 들립니다.
 >
+> 📚 아티스트 위키백과: [English](https://en.wikipedia.org/wiki/Miles_Davis)
+>
 > `[ ▶ ① So What · YouTube Music에서 듣기 ]`
 > `[ ▶ ② Blue in Green · YouTube Music에서 듣기 ]`
+> `[ 📚 위키백과에서 더 알아보기 ]`
 
 `/history` 응답 예:
 
