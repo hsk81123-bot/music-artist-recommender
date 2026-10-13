@@ -26,7 +26,12 @@
           "year": 1968
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Louis Armstrong",
+      "story": {
+        "text": "1964년, 62세의 Armstrong이 부른 Hello, Dolly!가 빌보드 싱글 차트 1위에 오르며 석 달 가까이 이어지던 비틀스의 1위 행진을 끊었습니다. 당시 최고령 1위 기록이었습니다.",
+        "wiki": "Hello, Dolly! (song)"
+      }
     },
     {
       "id": "duke-ellington",
@@ -53,7 +58,12 @@
           "year": 1956
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Duke Ellington",
+      "story": {
+        "text": "1956년 뉴포트 재즈 페스티벌에서 테너 색소폰 주자 Paul Gonsalves가 Diminuendo and Crescendo in Blue 중간에 27코러스짜리 솔로를 이어 가자 관객이 일어나 춤을 추기 시작했습니다. 이 공연 덕분에 내리막이던 Ellington 악단은 단숨에 재기했고, 그는 곧 Time 표지에 실렸습니다.",
+        "wiki": "Ellington at Newport"
+      }
     },
     {
       "id": "count-basie",
@@ -80,7 +90,12 @@
           "year": 1957
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Count Basie",
+      "story": {
+        "text": "One O'Clock Jump의 원래 제목은 라디오에서 소개하기 곤란한 이름이었습니다. 방송 중 아나운서가 곡명을 묻자 Basie가 시계를 보니 1시 가까이였고, 그렇게 지금의 제목이 붙었다고 전해집니다.",
+        "wiki": "One O'Clock Jump"
+      }
     },
     {
       "id": "coleman-hawkins",
@@ -107,7 +122,12 @@
           "year": 1945
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Coleman Hawkins",
+      "story": {
+        "text": "1939년 Body and Soul은 녹음 세션 끝에 거의 덤처럼 녹음됐습니다. 원곡 멜로디를 거의 연주하지 않고 처음부터 끝까지 즉흥으로 풀어낸 연주였는데도 히트하면서, 즉흥연주 자체가 대중에게 통한다는 것을 보여 줬습니다.",
+        "wiki": "Body and Soul (1930 song)"
+      }
     },
     {
       "id": "lester-young",
@@ -134,7 +154,12 @@
           "year": 1945
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Lester Young",
+      "story": {
+        "text": "Lester Young과 Billie Holiday는 서로에게 별명을 지어 줬습니다. Holiday는 그를 '테너의 대통령'이라는 뜻의 'Prez'로, Young은 그녀를 'Lady Day'라고 불렀고, 두 별명은 지금도 두 사람을 부르는 이름으로 남아 있습니다.",
+        "wiki": "Billie Holiday"
+      }
     },
     {
       "id": "billie-holiday",
@@ -161,7 +186,12 @@
           "year": 1958
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Billie Holiday",
+      "story": {
+        "text": "흑인 린치를 고발하는 Strange Fruit는 소속 음반사 Columbia가 녹음을 거부했습니다. Holiday는 작은 레이블 Commodore에서 이 곡을 녹음했고, 곡은 훗날 민권운동의 상징적인 노래가 됐습니다.",
+        "wiki": "Strange Fruit"
+      }
     },
     {
       "id": "ella-fitzgerald",
@@ -188,7 +218,12 @@
           "year": 1956
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Ella Fitzgerald",
+      "story": {
+        "text": "1934년, 17세의 Ella는 할렘 아폴로 극장 아마추어 나이트에 춤을 추려고 나갔습니다. 앞 순서 댄서들의 실력에 겁을 먹고 즉석에서 노래로 바꿨는데, 그 무대에서 우승하며 가수의 길이 열렸습니다.",
+        "wiki": "Amateur Night at the Apollo"
+      }
     },
     {
       "id": "django-reinhardt",
@@ -215,7 +250,12 @@
           "year": 1934
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Django Reinhardt",
+      "story": {
+        "text": "18세 때 살던 캐러밴에 불이 나 왼손 약지와 새끼손가락이 화상으로 거의 마비됐습니다. Django는 남은 두 손가락으로 하는 독자적인 운지법을 만들어 냈고, 그 연주로 집시 재즈를 탄생시켰습니다.",
+        "wiki": "Django Reinhardt"
+      }
     },
     {
       "id": "charlie-christian",
@@ -245,7 +285,12 @@
           "performer": "Benny Goodman Sextet"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Charlie Christian",
+      "story": {
+        "text": "1939년 프로듀서 John Hammond가 Christian을 Benny Goodman에게 소개했지만 Goodman은 시큰둥했습니다. 그날 밤 Hammond가 몰래 그를 무대에 올렸고, Rose Room 한 곡을 40분 넘게 함께 연주한 뒤 Goodman은 그 자리에서 그를 채용했습니다.",
+        "wiki": "Charlie Christian"
+      }
     },
     {
       "id": "gene-krupa",
@@ -273,7 +318,12 @@
           "year": 1941
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Gene Krupa",
+      "story": {
+        "text": "1938년 Benny Goodman 악단의 카네기홀 공연은 재즈가 클래식의 전당에 처음 본격적으로 입성한 사건으로 꼽힙니다. 이날 Sing, Sing, Sing에서 Krupa의 드럼은 공연의 하이라이트가 됐습니다.",
+        "wiki": "The Famous 1938 Carnegie Hall Jazz Concert"
+      }
     },
     {
       "id": "chick-webb",
@@ -300,7 +350,12 @@
           "year": 1937
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Chick Webb",
+      "story": {
+        "text": "어린 시절 척추결핵으로 등이 굽고 체구가 작았지만, Webb은 할렘 사보이 볼룸의 '밴드 배틀'에서 최강자였습니다. 1937년 당시 최고 인기였던 Benny Goodman 악단과의 대결에서도 이겼다고 전해집니다.",
+        "wiki": "Savoy Ballroom"
+      }
     },
     {
       "id": "jimmy-blanton",
@@ -330,7 +385,12 @@
           "performer": "Duke Ellington"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Jimmy Blanton",
+      "story": {
+        "text": "21세에 Duke Ellington 악단에 들어간 Blanton은 박자만 짚던 베이스를 멜로디를 노래하는 솔로 악기로 바꿔 놓았습니다. 하지만 결핵으로 23세에 세상을 떠나, 그의 녹음은 약 2년 치만 남아 있습니다.",
+        "wiki": "Jimmy Blanton"
+      }
     },
     {
       "id": "art-tatum",
@@ -357,7 +417,12 @@
           "year": 1949
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Art Tatum",
+      "story": {
+        "text": "거의 앞을 보지 못했던 Tatum이 클럽에 들어서자, 연주 중이던 Fats Waller가 '저는 피아노를 칠 뿐이지만, 오늘 밤 이곳엔 신이 와 계십니다'라고 소개했다는 일화가 유명합니다.",
+        "wiki": "Art Tatum"
+      }
     },
     {
       "id": "fats-waller",
@@ -384,7 +449,12 @@
           "year": 1942
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Fats Waller",
+      "story": {
+        "text": "1926년 시카고에서 Waller는 괴한들에게 납치돼 Al Capone의 생일 파티장으로 끌려갔습니다. 그곳에서 사흘 동안 피아노를 쳤고, 두둑한 팁을 받고 풀려났다는 이야기가 전해집니다.",
+        "wiki": "Fats Waller"
+      }
     },
     {
       "id": "roy-eldridge",
@@ -412,7 +482,12 @@
           "year": 1937
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Roy Eldridge",
+      "story": {
+        "text": "'Little Jazz'라 불린 Eldridge는 Louis Armstrong과 Dizzy Gillespie를 잇는 다리로 평가받습니다. 젊은 Gillespie가 가장 먼저 따라 하려 했던 트럼펫 연주자가 바로 그였습니다.",
+        "wiki": "Dizzy Gillespie"
+      }
     },
     {
       "id": "ben-webster",
@@ -441,7 +516,12 @@
           "year": 1957
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Ben Webster",
+      "story": {
+        "text": "거칠게 으르렁대다가 발라드에서는 숨소리만 남기는 음색으로 유명했던 Webster는 1960년대 유럽으로 건너가 코펜하겐에 정착했습니다. 그는 생의 마지막까지 유럽 무대에서 활동했습니다.",
+        "wiki": "Ben Webster"
+      }
     },
     {
       "id": "charlie-parker",
@@ -468,7 +548,12 @@
           "year": 1948
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Charlie Parker",
+      "story": {
+        "text": "10대 시절 캔자스시티 잼세션에서 박자를 놓친 Parker에게 드러머 Jo Jones가 심벌을 발밑으로 던져 무대에서 내쫓았습니다. 굴욕을 맛본 Parker는 그 뒤 하루 십여 시간씩 연습에 매달렸다고 합니다.",
+        "wiki": "Charlie Parker"
+      }
     },
     {
       "id": "dizzy-gillespie",
@@ -495,7 +580,12 @@
           "year": 1947
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Dizzy Gillespie",
+      "story": {
+        "text": "Gillespie의 상징인 위로 꺾인 트럼펫은 사고에서 나왔습니다. 1953년 파티에서 누군가 그의 트럼펫 위로 넘어지며 벨이 휘었는데, 불어 보니 소리가 더 잘 들려서 이후 일부러 그 모양으로 주문해 썼습니다.",
+        "wiki": "Dizzy Gillespie"
+      }
     },
     {
       "id": "bud-powell",
@@ -522,7 +612,12 @@
           "year": 1959
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Bud Powell",
+      "story": {
+        "text": "1951년 Un Poco Loco 녹음에서는 세 개의 테이크가 모두 남아 있습니다. 순서대로 들으면 Powell이 곡을 점점 더 격렬하게 다듬어 가는 과정을 그대로 따라갈 수 있습니다.",
+        "wiki": "The Amazing Bud Powell"
+      }
     },
     {
       "id": "thelonious-monk",
@@ -549,7 +644,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Thelonious Monk",
+      "story": {
+        "text": "Monk가 20대 초반에 쓴 'Round Midnight는 재즈 역사상 가장 많이 녹음된 곡 중 하나가 됐습니다. 독특한 화성 때문에 당시에는 '틀리게 치는 피아니스트'라는 오해도 받았습니다.",
+        "wiki": "'Round Midnight (song)"
+      }
     },
     {
       "id": "max-roach",
@@ -576,7 +676,12 @@
           "year": 1966
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Max Roach",
+      "story": {
+        "text": "1960년 Roach는 노예해방 100주년을 앞두고 민권운동을 정면으로 다룬 앨범 We Insist!를 발표했습니다. 아내가 되는 Abbey Lincoln의 절규와 드럼이 맞붙는 Triptych는 지금도 강렬한 저항의 기록입니다.",
+        "wiki": "We Insist!"
+      }
     },
     {
       "id": "ray-brown",
@@ -606,7 +711,12 @@
           "performer": "Oscar Peterson Trio"
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Ray Brown (musician)",
+      "story": {
+        "text": "Ray Brown은 1947년 Ella Fitzgerald와 결혼해 몇 년간 그녀의 반주 트리오를 이끌었습니다. 이후 Oscar Peterson 트리오에서 15년 가까이 활약하며 '가장 스윙하는 베이시스트'로 불렸습니다.",
+        "wiki": "Oscar Peterson"
+      }
     },
     {
       "id": "sarah-vaughan",
@@ -633,7 +743,12 @@
           "year": 1947
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Sarah Vaughan",
+      "story": {
+        "text": "1942년 아폴로 극장 아마추어 나이트에서 우승한 Vaughan은 곧 Earl Hines 악단에 들어가 Charlie Parker, Dizzy Gillespie와 함께 무대에 섰습니다. 그녀는 비밥을 노래로 소화한 첫 세대 가수가 됐습니다.",
+        "wiki": "Amateur Night at the Apollo"
+      }
     },
     {
       "id": "fats-navarro",
@@ -662,7 +777,12 @@
           "performer": "Tadd Dameron"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Fats Navarro",
+      "story": {
+        "text": "'Fat Girl'이라는 별명으로 불린 Navarro는 맑고 정확한 비밥 트럼펫으로 Clifford Brown 같은 후배들에게 큰 영향을 줬습니다. 하지만 결핵과 약물로 26세에 세상을 떠났습니다.",
+        "wiki": "Fats Navarro"
+      }
     },
     {
       "id": "barney-kessel",
@@ -689,7 +809,12 @@
           "year": 1957
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Barney Kessel",
+      "story": {
+        "text": "Kessel은 재즈 기타리스트이면서 'The Wrecking Crew'라 불린 LA 세션 연주자 집단의 일원이었습니다. 그래서 비치 보이스, 필 스펙터 등의 팝 명반에도 그의 기타가 숨어 있습니다.",
+        "wiki": "The Wrecking Crew (music)"
+      }
     },
     {
       "id": "oscar-peterson",
@@ -716,7 +841,12 @@
           "year": 1950
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Oscar Peterson",
+      "story": {
+        "text": "1949년 카네기홀 Jazz at the Philharmonic 공연 날, Peterson은 원래 객석에 앉아 있었습니다. 기획자 Norman Granz가 즉석에서 그를 무대로 불러냈고, 이 깜짝 무대가 그의 미국 데뷔가 됐습니다.",
+        "wiki": "Jazz at the Philharmonic"
+      }
     },
     {
       "id": "erroll-garner",
@@ -743,7 +873,12 @@
           "year": 1955
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Erroll Garner",
+      "story": {
+        "text": "Garner는 평생 악보를 읽지 못했지만 한 번 들은 곡은 무엇이든 쳤습니다. 대표곡 Misty는 비행기 창밖으로 무지개를 보다가 떠올린 곡이라고 전해집니다.",
+        "wiki": "Misty (song)"
+      }
     },
     {
       "id": "chet-baker",
@@ -770,7 +905,12 @@
           "year": 1989
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Chet Baker",
+      "story": {
+        "text": "1966년 폭행을 당해 앞니를 잃은 Baker는 한동안 트럼펫을 불 수 없었습니다. 그는 의치에 맞춰 주법을 처음부터 다시 익혀 재기했고, 말년의 모습은 다큐멘터리 Let's Get Lost에 담겼습니다.",
+        "wiki": "Let's Get Lost (1988 film)"
+      }
     },
     {
       "id": "stan-getz",
@@ -798,7 +938,12 @@
           "performer": "Johnny Smith"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Stan Getz",
+      "story": {
+        "text": "The Girl from Ipanema의 영어 가사는 전문 가수가 아니던 Astrud Gilberto가 녹음 현장에서 우연히 부르게 됐습니다. 이 곡은 1965년 그래미 올해의 레코드를 받으며 전 세계에 보사노바 열풍을 일으켰습니다.",
+        "wiki": "The Girl from Ipanema"
+      }
     },
     {
       "id": "paul-desmond",
@@ -826,7 +971,12 @@
           "year": 1965
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Paul Desmond",
+      "story": {
+        "text": "역사상 가장 많이 팔린 재즈 싱글 중 하나인 Take Five의 작곡가는 Brubeck이 아니라 Desmond입니다. 그는 이 곡의 저작권 수익을 미국 적십자에 기부하도록 유언을 남겼습니다.",
+        "wiki": "Take Five"
+      }
     },
     {
       "id": "dave-brubeck",
@@ -853,7 +1003,12 @@
           "year": 1956
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Dave Brubeck",
+      "story": {
+        "text": "음반사는 5/4, 9/8 같은 변박 곡만 담은 Time Out이 팔리지 않을 거라며 발매를 꺼렸습니다. 하지만 이 앨범은 백만 장 넘게 팔린 최초의 재즈 앨범 중 하나가 됐습니다.",
+        "wiki": "Time Out (album)"
+      }
     },
     {
       "id": "gerry-mulligan",
@@ -880,7 +1035,12 @@
           "year": 1952
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Gerry Mulligan",
+      "story": {
+        "text": "Mulligan의 유명한 '피아노 없는 쿼텟'은 LA 클럽 The Haig에 쓸 만한 피아노가 없어서 생겨났다는 이야기가 전해집니다. 바리톤 색소폰과 Chet Baker의 트럼펫이 대화하듯 얽히는 사운드는 그렇게 탄생했습니다.",
+        "wiki": "Gerry Mulligan"
+      }
     },
     {
       "id": "lee-konitz",
@@ -907,7 +1067,12 @@
           "year": 1961
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Lee Konitz",
+      "story": {
+        "text": "모두가 Charlie Parker를 흉내 내던 시대에 Konitz는 비브라토 없는 가볍고 서늘한 알토로 자기 길을 갔습니다. 그는 쿨 재즈의 출발점인 Miles Davis의 Birth of the Cool 세션에도 참여했습니다.",
+        "wiki": "Birth of the Cool"
+      }
     },
     {
       "id": "lennie-tristano",
@@ -934,7 +1099,12 @@
           "year": 1956
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Lennie Tristano",
+      "story": {
+        "text": "1949년 Tristano 그룹이 녹음한 Intuition과 Digression은 정해진 곡조 없이 연주한 녹음입니다. 프리 재즈보다 10년 앞서 집단 즉흥을 시도한 기록으로 꼽힙니다.",
+        "wiki": "Lennie Tristano"
+      }
     },
     {
       "id": "john-lewis",
@@ -964,7 +1134,12 @@
           "performer": "The Modern Jazz Quartet"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "John Lewis (pianist)",
+      "story": {
+        "text": "Modern Jazz Quartet의 대표곡 Django는 1953년 세상을 떠난 집시 기타리스트 Django Reinhardt를 추모하며 Lewis가 쓴 곡입니다. 클래식의 형식미와 블루스를 결합한 MJQ 스타일이 잘 드러납니다.",
+        "wiki": "Modern Jazz Quartet"
+      }
     },
     {
       "id": "june-christy",
@@ -991,7 +1166,12 @@
           "year": 1955
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "June Christy",
+      "story": {
+        "text": "Christy는 Stan Kenton 악단의 간판 가수로 이름을 알렸습니다. 솔로 데뷔작 Something Cool은 '쿨 재즈 보컬'이라는 말을 대표하는 앨범이 됐습니다.",
+        "wiki": "Stan Kenton"
+      }
     },
     {
       "id": "anita-o-day",
@@ -1019,7 +1199,12 @@
           "year": 1957
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Anita O'Day",
+      "story": {
+        "text": "1958년 뉴포트 재즈 페스티벌에서 챙 넓은 모자와 장갑 차림으로 Sweet Georgia Brown과 Tea for Two를 부른 무대는 영화 Jazz on a Summer's Day에 담겼습니다. 이 장면은 재즈 보컬 역사의 명장면으로 꼽힙니다.",
+        "wiki": "Jazz on a Summer's Day"
+      }
     },
     {
       "id": "scott-lafaro",
@@ -1049,7 +1234,12 @@
           "performer": "Bill Evans Trio"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Scott LaFaro",
+      "story": {
+        "text": "1961년 6월 Bill Evans 트리오와 빌리지 뱅가드 실황을 녹음하고 불과 11일 뒤, LaFaro는 교통사고로 25세에 세상을 떠났습니다. 큰 충격을 받은 Evans는 한동안 연주를 거의 하지 못했습니다.",
+        "wiki": "Sunday at the Village Vanguard"
+      }
     },
     {
       "id": "shelly-manne",
@@ -1076,7 +1266,12 @@
           "year": 1956
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Shelly Manne",
+      "story": {
+        "text": "Manne의 트리오가 뮤지컬 넘버를 재즈로 연주한 My Fair Lady는 큰 히트를 기록하며 '브로드웨이 재즈 앨범' 붐을 일으켰습니다. 그는 할리우드에 자신의 재즈 클럽 Shelly's Manne-Hole도 열었습니다.",
+        "wiki": "Shelly Manne"
+      }
     },
     {
       "id": "jim-hall",
@@ -1105,7 +1300,12 @@
           "year": 1975
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Jim Hall (musician)",
+      "story": {
+        "text": "1959년 돌연 은퇴했던 Sonny Rollins가 2년 만에 복귀하며 고른 파트너가 Jim Hall이었습니다. 두 사람이 함께한 복귀작 The Bridge에서 Hall의 절제된 기타는 Rollins의 테너와 완벽한 균형을 이룹니다.",
+        "wiki": "The Bridge (Sonny Rollins album)"
+      }
     },
     {
       "id": "art-pepper",
@@ -1132,7 +1332,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Art Pepper",
+      "story": {
+        "text": "1957년 Pepper는 Miles Davis 밴드의 리듬 섹션과 녹음한다는 사실을 녹음 당일 아침에야 들었고, 한동안 악기를 손에 잡지도 않은 상태였습니다. 그날 즉석으로 완성한 앨범은 그의 최고작으로 남았습니다.",
+        "wiki": "Art Pepper Meets the Rhythm Section"
+      }
     },
     {
       "id": "art-blakey",
@@ -1159,7 +1364,12 @@
           "year": 1961
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Art Blakey",
+      "story": {
+        "text": "Blakey의 Jazz Messengers는 30년 넘게 이어지며 '하드밥 대학'이라 불렸습니다. Lee Morgan, Wayne Shorter, Freddie Hubbard부터 Wynton Marsalis까지 수많은 거장이 이 밴드를 거쳐 갔습니다.",
+        "wiki": "The Jazz Messengers"
+      }
     },
     {
       "id": "horace-silver",
@@ -1186,7 +1396,12 @@
           "year": 1956
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Horace Silver",
+      "story": {
+        "text": "Song for My Father의 앨범 표지 속 인물은 Silver의 실제 아버지입니다. 카보베르데 출신인 아버지에게서 들은 포르투갈풍 민요의 리듬이 곡의 바탕이 됐습니다.",
+        "wiki": "Song for My Father (album)"
+      }
     },
     {
       "id": "clifford-brown",
@@ -1213,7 +1428,12 @@
           "year": 1955
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Clifford Brown",
+      "story": {
+        "text": "Brown은 약물과 거리를 둔 성실한 연주자로 존경받았지만 1956년 교통사고로 25세에 세상을 떠났습니다. 동료 Benny Golson이 그를 추모하며 쓴 I Remember Clifford는 재즈 스탠더드가 됐습니다.",
+        "wiki": "Clifford Brown"
+      }
     },
     {
       "id": "lee-morgan",
@@ -1240,7 +1460,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Lee Morgan",
+      "story": {
+        "text": "1972년 Morgan은 뉴욕 클럽 Slug's의 공연 중 쉬는 시간에 오랜 연인 Helen Morgan의 총에 맞아 33세에 세상을 떠났습니다. 두 사람의 이야기는 다큐멘터리 I Called Him Morgan에 담겼습니다.",
+        "wiki": "I Called Him Morgan"
+      }
     },
     {
       "id": "sonny-rollins",
@@ -1267,7 +1492,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Sonny Rollins",
+      "story": {
+        "text": "1959년 정상에서 돌연 활동을 멈춘 Rollins는 이웃에게 방해가 되지 않으려고 밤마다 윌리엄스버그 다리 위에서 색소폰을 연습했습니다. 2년 뒤 복귀작의 제목은 The Bridge였습니다.",
+        "wiki": "The Bridge (Sonny Rollins album)"
+      }
     },
     {
       "id": "cannonball-adderley",
@@ -1294,7 +1524,12 @@
           "year": 1960
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Cannonball Adderley",
+      "story": {
+        "text": "1955년 플로리다의 음악 교사였던 Adderley는 뉴욕 클럽 Café Bohemia에 놀러 갔다가 즉석에서 악기를 빌려 무대에 섰습니다. 그날 밤 연주로 하룻밤 사이에 뉴욕 재즈계의 화제가 됐습니다.",
+        "wiki": "Cannonball Adderley"
+      }
     },
     {
       "id": "dexter-gordon",
@@ -1321,7 +1556,12 @@
           "year": 1961
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Dexter Gordon",
+      "story": {
+        "text": "Gordon은 1986년 영화 'Round Midnight에서 파리로 건너간 재즈 색소포니스트를 연기했습니다. 실제 연주자인 그는 이 연기로 아카데미 남우주연상 후보에 올랐습니다.",
+        "wiki": "Dexter Gordon"
+      }
     },
     {
       "id": "hank-mobley",
@@ -1348,7 +1588,12 @@
           "year": 1966
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Hank Mobley",
+      "story": {
+        "text": "평론가 Leonard Feather는 Mobley를 '테너 색소폰의 미들급 챔피언'이라 불렀습니다. Coltrane처럼 거칠지도, Getz처럼 가볍지도 않은 둥근 소리를 뜻하는 말로, 그 매력이 가장 잘 담긴 앨범이 Soul Station입니다.",
+        "wiki": "Soul Station"
+      }
     },
     {
       "id": "wes-montgomery",
@@ -1375,7 +1620,12 @@
           "year": 1966
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Wes Montgomery",
+      "story": {
+        "text": "Montgomery는 피크 대신 엄지손가락으로 기타를 쳤습니다. 낮에는 공장에서 일하고 밤에 연습하면서 이웃이 깨지 않도록 부드럽게 치다 보니 생긴 습관이었고, 그 따뜻한 소리가 그의 상징이 됐습니다.",
+        "wiki": "Wes Montgomery"
+      }
     },
     {
       "id": "grant-green",
@@ -1402,7 +1652,12 @@
           "year": 1970
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Grant Green",
+      "story": {
+        "text": "15분에 이르는 Idle Moments는 원래 훨씬 짧게 녹음할 예정이었습니다. 연주자들이 코러스 길이를 두 배로 착각한 채 연주했는데, 결과가 너무 좋아 그대로 앨범의 타이틀곡이 됐습니다.",
+        "wiki": "Idle Moments"
+      }
     },
     {
       "id": "kenny-burrell",
@@ -1429,7 +1684,12 @@
           "year": 1963
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Kenny Burrell",
+      "story": {
+        "text": "Duke Ellington은 Burrell을 자신이 가장 좋아하는 기타리스트로 꼽았습니다. 블루스와 재즈를 넘나드는 그의 대표작 Midnight Blue는 Blue Note 레이블의 상징적인 앨범 중 하나입니다.",
+        "wiki": "Midnight Blue (Kenny Burrell album)"
+      }
     },
     {
       "id": "paul-chambers",
@@ -1456,7 +1716,12 @@
           "year": 1957
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Paul Chambers",
+      "story": {
+        "text": "Chambers는 Kind of Blue, Giant Steps 등 1950년대 명반에 빠짐없이 이름을 올린 베이시스트입니다. Coltrane은 Giant Steps에 그의 이니셜을 딴 곡 Mr. P.C.를 실어 경의를 표했습니다.",
+        "wiki": "Giant Steps"
+      }
     },
     {
       "id": "charles-mingus",
@@ -1483,7 +1748,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Charles Mingus",
+      "story": {
+        "text": "Goodbye Pork Pie Hat은 1959년 세상을 떠난 Lester Young을 추모하는 곡입니다. 제목의 '포크파이 모자'는 Young이 늘 쓰고 다니던 모자를 가리킵니다.",
+        "wiki": "Goodbye Pork Pie Hat"
+      }
     },
     {
       "id": "kenny-dorham",
@@ -1511,7 +1781,12 @@
           "performer": "Joe Henderson"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Kenny Dorham",
+      "story": {
+        "text": "가장 유명한 재즈 스탠더드 중 하나인 Blue Bossa는 Dorham이 작곡해 1963년 Joe Henderson의 데뷔작 Page One에서 처음 발표됐습니다. 연주자로서보다 작곡가로서 더 오래 기억되는 경우입니다.",
+        "wiki": "Blue Bossa"
+      }
     },
     {
       "id": "lambert-hendricks-and-ross",
@@ -1538,7 +1813,12 @@
           "year": 1959
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Lambert, Hendricks & Ross",
+      "story": {
+        "text": "세 사람은 1957년 Count Basie 악단의 연주를 목소리만으로 재현한 Sing a Song of Basie로 데뷔했습니다. 악기 솔로에 가사를 붙여 노래하는 '보컬리즈'라는 장르를 대중화했고, 녹음에는 목소리를 여러 번 겹쳐 녹음하는 기법을 썼습니다.",
+        "wiki": "Sing a Song of Basie"
+      }
     },
     {
       "id": "dinah-washington",
@@ -1565,7 +1845,12 @@
           "year": 1952
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Dinah Washington",
+      "story": {
+        "text": "'블루스의 여왕'이라 불린 Washington은 1959년 What a Diff'rence a Day Makes로 팝 차트 상위권에 오르고 그래미상을 받았습니다. 재즈, 블루스, R&B, 팝의 경계를 넘나든 가수였습니다.",
+        "wiki": "What a Diff'rence a Day Made"
+      }
     },
     {
       "id": "sonny-clark",
@@ -1592,7 +1877,12 @@
           "year": 1958
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Sonny Clark",
+      "story": {
+        "text": "Cool Struttin'은 발매 당시 미국에서는 큰 반향이 없었지만, 일본 재즈 팬들 사이에서 최고 인기 앨범이 됐습니다. 하이힐을 신고 걷는 여성의 다리를 담은 표지도 유명합니다.",
+        "wiki": "Cool Struttin'"
+      }
     },
     {
       "id": "roy-haynes",
@@ -1619,7 +1909,12 @@
           "year": 1962
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Roy Haynes",
+      "story": {
+        "text": "Haynes는 1940년대 Charlie Parker부터 2000년대 Chick Corea, Pat Metheny까지 70년 넘게 재즈의 모든 시대를 현역으로 거쳤습니다. 2024년 99세로 세상을 떠날 때까지 '스냅 크래클'이라 불린 경쾌한 드럼으로 사랑받았습니다.",
+        "wiki": "Roy Haynes"
+      }
     },
     {
       "id": "miles-davis",
@@ -1646,7 +1941,12 @@
           "year": 1957
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Miles Davis",
+      "story": {
+        "text": "1959년 Kind of Blue 녹음 날, 멤버들은 간단한 스케치만 받아 거의 리허설 없이 연주했고 대부분의 곡이 첫 테이크로 완성됐습니다. 이 앨범은 지금도 가장 많이 팔린 재즈 앨범 중 하나입니다.",
+        "wiki": "Kind of Blue"
+      }
     },
     {
       "id": "john-coltrane",
@@ -1673,7 +1973,12 @@
           "year": 1965
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "John Coltrane",
+      "story": {
+        "text": "1957년 약물 문제로 Miles Davis 밴드에서 해고된 Coltrane은 스스로 약을 끊고 '영적 각성'을 경험했다고 말했습니다. 그 고백을 담아 1964년 녹음한 4부작 모음곡이 A Love Supreme입니다.",
+        "wiki": "A Love Supreme"
+      }
     },
     {
       "id": "bill-evans",
@@ -1700,7 +2005,12 @@
           "year": 1960
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Bill Evans",
+      "story": {
+        "text": "Peace Piece는 원래 스탠더드 Some Other Time의 인트로로 연주하던 두 개의 화음을 녹음 현장에서 즉흥으로 길게 늘인 곡입니다. 같은 왼손 패턴 위에서 6분 넘게 펼쳐지는 명상적인 즉흥연주입니다.",
+        "wiki": "Everybody Digs Bill Evans"
+      }
     },
     {
       "id": "mccoy-tyner",
@@ -1727,7 +2037,12 @@
           "year": 1976
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "McCoy Tyner",
+      "story": {
+        "text": "John Coltrane 클래식 쿼텟의 피아니스트였던 Tyner는 Coltrane의 음악이 점점 프리 재즈로 향하자 1965년 밴드를 떠났습니다. 2년 뒤 발표한 The Real McCoy는 그가 자기 언어를 찾은 첫 걸작으로 꼽힙니다.",
+        "wiki": "The Real McCoy (McCoy Tyner album)"
+      }
     },
     {
       "id": "herbie-hancock",
@@ -1754,7 +2069,12 @@
           "year": 1962
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Herbie Hancock",
+      "story": {
+        "text": "Hancock이 1964년에 발표한 Cantaloupe Island는 30년 뒤 영국 그룹 Us3가 샘플링한 Cantaloop (Flip Fantasia)로 다시 세계적인 히트를 쳤습니다.",
+        "wiki": "Cantaloop (Flip Fantasia)"
+      }
     },
     {
       "id": "wayne-shorter",
@@ -1781,7 +2101,12 @@
           "year": 1965
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Wayne Shorter",
+      "story": {
+        "text": "Shorter는 Miles Davis 2기 퀸텟의 핵심 작곡가였고, 1970년에는 Joe Zawinul과 함께 퓨전 밴드 Weather Report를 만들었습니다. Footprints, Speak No Evil 같은 그의 곡은 지금도 재즈 연주자들의 필수 레퍼토리입니다.",
+        "wiki": "Weather Report"
+      }
     },
     {
       "id": "joe-henderson",
@@ -1808,7 +2133,12 @@
           "year": 1966
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Joe Henderson",
+      "story": {
+        "text": "1960년대 Blue Note의 핵심 테너였던 Henderson은 오랫동안 '연주자들의 연주자'로만 알려져 있었습니다. 1990년대 Verve에서 낸 앨범들이 그래미를 받으며 50대에 들어서야 대중적 명성을 얻었습니다.",
+        "wiki": "Joe Henderson"
+      }
     },
     {
       "id": "freddie-hubbard",
@@ -1835,7 +2165,12 @@
           "year": 1967
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Freddie Hubbard",
+      "story": {
+        "text": "Hubbard는 Ornette Coleman의 Free Jazz, Eric Dolphy의 Out to Lunch!, Herbie Hancock의 Maiden Voyage에 모두 참여했습니다. 프리 재즈부터 모달까지 1960년대의 핵심 명반을 두루 거친 트럼페터입니다.",
+        "wiki": "Red Clay (album)"
+      }
     },
     {
       "id": "elvin-jones",
@@ -1865,7 +2200,12 @@
           "performer": "John Coltrane"
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Elvin Jones",
+      "story": {
+        "text": "Elvin Jones는 재즈 명문가의 막내였습니다. 맏형 Hank Jones는 피아니스트, 둘째 형 Thad Jones는 트럼페터이자 빅밴드 리더로, 삼 형제 모두 재즈 거장이 됐습니다.",
+        "wiki": "Hank Jones"
+      }
     },
     {
       "id": "ron-carter",
@@ -1895,7 +2235,12 @@
           "performer": "Miles Davis"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Ron Carter",
+      "story": {
+        "text": "Ron Carter는 2,200장이 넘는 녹음에 참여해 '역사상 가장 많은 녹음을 남긴 재즈 베이시스트'로 2015년 기네스 세계기록에 올랐습니다. A Tribe Called Quest의 힙합 앨범에도 참여했습니다.",
+        "wiki": "Ron Carter"
+      }
     },
     {
       "id": "abbey-lincoln",
@@ -1923,7 +2268,12 @@
           "year": 1961
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Abbey Lincoln",
+      "story": {
+        "text": "할리우드에서 섹시 가수 이미지로 데뷔했던 Lincoln은 Max Roach를 만나 민권운동을 노래하는 가수로 거듭났습니다. 1960년 We Insist!에서 비명에 가까운 목소리로 노예제와 저항을 표현했습니다.",
+        "wiki": "We Insist!"
+      }
     },
     {
       "id": "charles-lloyd",
@@ -1950,7 +2300,12 @@
           "year": 1967
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Charles Lloyd (jazz musician)",
+      "story": {
+        "text": "1966년 몬터레이 재즈 페스티벌 실황 Forest Flower는 히피 세대의 록 팬들에게까지 퍼져 백만 장 넘게 팔렸습니다. Lloyd의 쿼텟은 록 공연장 필모어에 선 첫 재즈 밴드 중 하나였습니다.",
+        "wiki": "Forest Flower"
+      }
     },
     {
       "id": "ornette-coleman",
@@ -1977,7 +2332,12 @@
           "year": 1960
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Ornette Coleman",
+      "story": {
+        "text": "1959년 뉴욕 클럽 Five Spot에 하얀 플라스틱 색소폰을 들고 나타난 Coleman은 재즈계를 둘로 갈라놓았습니다. 천재라는 찬사와 사기꾼이라는 비난이 동시에 쏟아졌습니다.",
+        "wiki": "The Shape of Jazz to Come"
+      }
     },
     {
       "id": "eric-dolphy",
@@ -2004,7 +2364,12 @@
           "year": 1964
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Eric Dolphy",
+      "story": {
+        "text": "Out to Lunch!를 녹음하고 넉 달 뒤, Dolphy는 베를린 투어 중 쓰러져 36세에 세상을 떠났습니다. 진단되지 않은 당뇨가 원인이었습니다.",
+        "wiki": "Out to Lunch!"
+      }
     },
     {
       "id": "cecil-taylor",
@@ -2031,7 +2396,12 @@
           "year": 1966
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Cecil Taylor",
+      "story": {
+        "text": "클래식 교육을 받은 Taylor는 피아노를 '88개의 조율된 드럼'처럼 다루는 폭발적인 연주로 프리 재즈 피아노를 개척했습니다. 2013년에는 일본의 권위 있는 교토상을 받았습니다.",
+        "wiki": "Cecil Taylor"
+      }
     },
     {
       "id": "albert-ayler",
@@ -2058,7 +2428,12 @@
           "year": 1965
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Albert Ayler",
+      "story": {
+        "text": "Ayler의 Spiritual Unity는 이후 프리 재즈의 산실이 되는 ESP-Disk 레이블의 첫 재즈 앨범이었습니다. 그러나 그는 1970년 뉴욕 이스트강에서 시신으로 발견됐고, 34세였습니다.",
+        "wiki": "Spiritual Unity"
+      }
     },
     {
       "id": "don-cherry",
@@ -2085,7 +2460,12 @@
           "year": 1975
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Don Cherry (trumpeter)",
+      "story": {
+        "text": "Ornette Coleman 쿼텟에서 작은 포켓 트럼펫을 불던 Cherry는 이후 아프리카, 인도 음악을 흡수하며 월드 뮤직의 선구자가 됐습니다. 팝 가수 Neneh Cherry가 그의 의붓딸입니다.",
+        "wiki": "Neneh Cherry"
+      }
     },
     {
       "id": "charlie-haden",
@@ -2114,7 +2494,12 @@
           "year": 1970
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Charlie Haden",
+      "story": {
+        "text": "1971년 독재 정권 시절 포르투갈 공연에서 Haden은 Song for Che를 아프리카 식민지 해방운동에 바친다고 말했습니다. 그는 다음 날 공항에서 체포돼 비밀경찰의 심문을 받았습니다.",
+        "wiki": "Liberation Music Orchestra"
+      }
     },
     {
       "id": "sun-ra",
@@ -2141,7 +2526,12 @@
           "year": 1966
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Sun Ra",
+      "story": {
+        "text": "본명이 Herman Blount인 Sun Ra는 자신이 토성에서 왔다고 주장했습니다. 이집트풍 의상을 입은 그의 악단 Arkestra는 그가 세상을 떠난 뒤에도 지금까지 활동하고 있습니다.",
+        "wiki": "Sun Ra Arkestra"
+      }
     },
     {
       "id": "pharoah-sanders",
@@ -2168,7 +2558,12 @@
           "year": 1974
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Pharoah Sanders",
+      "story": {
+        "text": "본명 Farrell Sanders에게 'Pharoah'라는 이름을 붙여 준 사람은 Sun Ra였습니다. 대표곡 The Creator Has a Master Plan은 32분이 넘는 길이로 LP 한 면을 통째로 차지합니다.",
+        "wiki": "Karma (Pharoah Sanders album)"
+      }
     },
     {
       "id": "rashied-ali",
@@ -2198,7 +2593,12 @@
           "performer": "John Coltrane & Rashied Ali"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Rashied Ali",
+      "story": {
+        "text": "1967년 Coltrane과 Ali가 단둘이 녹음한 듀오 앨범 Interstellar Space는 Coltrane 사후 7년이 지난 1974년에야 발매됐습니다. 수록곡은 화성, 금성, 목성, 토성 같은 행성의 이름을 땄습니다.",
+        "wiki": "Interstellar Space"
+      }
     },
     {
       "id": "leon-thomas",
@@ -2226,7 +2626,12 @@
           "year": 1969
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Leon Thomas",
+      "story": {
+        "text": "Thomas는 아프리카 피그미족 음악에서 영향받은 요들 같은 스캣 창법으로 유명합니다. Pharoah Sanders의 The Creator Has a Master Plan에서 그 목소리를 들을 수 있습니다.",
+        "wiki": "Karma (Pharoah Sanders album)"
+      }
     },
     {
       "id": "sonny-sharrock",
@@ -2253,7 +2658,12 @@
           "year": 1969
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Sonny Sharrock",
+      "story": {
+        "text": "Sharrock은 원래 Coltrane 같은 색소포니스트가 되고 싶었지만 천식 때문에 기타를 잡았습니다. 말년에는 애니메이션 Space Ghost Coast to Coast의 주제곡을 작곡해 새 세대에게도 알려졌습니다.",
+        "wiki": "Sonny Sharrock"
+      }
     },
     {
       "id": "alice-coltrane",
@@ -2280,7 +2690,12 @@
           "year": 1970
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Alice Coltrane",
+      "story": {
+        "text": "Alice가 연주한 하프는 남편 John Coltrane이 주문해 둔 것이었는데, 1967년 그가 세상을 떠난 뒤에야 도착했습니다. Alice는 이 하프로 Journey in Satchidananda 같은 영적인 음악을 만들었습니다.",
+        "wiki": "Journey in Satchidananda"
+      }
     },
     {
       "id": "joe-zawinul",
@@ -2310,7 +2725,12 @@
           "performer": "Miles Davis"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Joe Zawinul",
+      "story": {
+        "text": "Weather Report의 최대 히트곡 Birdland는 Zawinul이 젊은 시절 즐겨 찾던 뉴욕 재즈 클럽 '버드랜드'에 바친 곡입니다. 그는 앞서 Cannonball Adderley 밴드 시절 히트곡 Mercy, Mercy, Mercy도 썼습니다.",
+        "wiki": "Heavy Weather (album)"
+      }
     },
     {
       "id": "jaco-pastorius",
@@ -2338,7 +2758,12 @@
           "performer": "Weather Report"
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Jaco Pastorius",
+      "story": {
+        "text": "Weather Report의 Joe Zawinul을 처음 만난 자리에서 Jaco는 '저는 세계 최고의 베이스 연주자입니다'라고 자기소개를 했습니다. 그는 곧 그 말을 증명해 보였습니다.",
+        "wiki": "Jaco Pastorius"
+      }
     },
     {
       "id": "chick-corea",
@@ -2367,7 +2792,12 @@
           "year": 1968
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Chick Corea",
+      "story": {
+        "text": "Spain의 서정적인 인트로는 스페인 작곡가 Joaquín Rodrigo의 기타 협주곡 Concierto de Aranjuez의 선율을 가져온 것입니다. 클래식과 라틴, 재즈를 엮은 Corea의 감각이 잘 드러납니다.",
+        "wiki": "Return to Forever"
+      }
     },
     {
       "id": "john-mclaughlin",
@@ -2397,7 +2827,12 @@
           "performer": "Mahavishnu Orchestra"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "John McLaughlin (musician)",
+      "story": {
+        "text": "Miles Davis는 McLaughlin이 참여한 Bitches Brew에 'John McLaughlin'이라는 제목의 곡을 실어 그를 기렸습니다. McLaughlin은 이후 Mahavishnu Orchestra로 재즈 록의 정점을 찍었습니다.",
+        "wiki": "Bitches Brew"
+      }
     },
     {
       "id": "pat-metheny",
@@ -2426,7 +2861,12 @@
           "performer": "Pat Metheny Group"
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Pat Metheny",
+      "story": {
+        "text": "Metheny는 18세에 마이애미 대학, 19세에 버클리 음대에서 학생들을 가르쳤습니다. 그는 그래미에서 서로 다른 10개 부문에 걸쳐 상을 받았습니다.",
+        "wiki": "Pat Metheny"
+      }
     },
     {
       "id": "billy-cobham",
@@ -2453,7 +2893,12 @@
           "year": 1973
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Billy Cobham",
+      "story": {
+        "text": "Cobham의 Stratus는 힙합과 트립합의 단골 샘플 소스가 됐습니다. Massive Attack의 Safe from Harm이 이 곡의 베이스 라인을 샘플링한 대표적인 예입니다.",
+        "wiki": "Spectrum (Billy Cobham album)"
+      }
     },
     {
       "id": "tony-williams",
@@ -2483,7 +2928,12 @@
           "performer": "The New Tony Williams Lifetime"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Tony Williams (drummer)",
+      "story": {
+        "text": "Williams는 17세에 Miles Davis 퀸텟의 드러머가 됐습니다. 그 나이에 박자를 쪼개고 늘리는 그의 드럼은 퀸텟의 사운드를 근본부터 바꿔 놓았습니다.",
+        "wiki": "Tony Williams (drummer)"
+      }
     },
     {
       "id": "stanley-clarke",
@@ -2510,7 +2960,12 @@
           "year": 1975
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Stanley Clarke",
+      "story": {
+        "text": "Clarke는 Chick Corea와 함께 Return to Forever를 이끌며 베이스를 무대 맨 앞의 리드 악기로 끌어올렸습니다. School Days는 그가 직접 노래하듯 연주하는 베이스 리프로 유명합니다.",
+        "wiki": "Return to Forever"
+      }
     },
     {
       "id": "michael-brecker",
@@ -2538,7 +2993,12 @@
           "year": 1996
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Michael Brecker",
+      "story": {
+        "text": "Brecker는 골수형성이상증후군과 싸우면서도 마지막 앨범 Pilgrimage를 완성했고, 이 앨범은 사후 그래미 2개 부문을 받았습니다. 그의 투병은 골수 기증 등록 캠페인으로도 이어졌습니다.",
+        "wiki": "Michael Brecker"
+      }
     },
     {
       "id": "chuck-mangione",
@@ -2565,7 +3025,12 @@
           "year": 1975
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Chuck Mangione",
+      "story": {
+        "text": "Feels So Good으로 팝 차트 상위권에 오른 Mangione은 애니메이션 King of the Hill에 본인 역으로 여러 번 등장했습니다. 그 덕분에 재즈를 모르는 세대에게도 얼굴이 알려졌습니다.",
+        "wiki": "King of the Hill"
+      }
     },
     {
       "id": "al-jarreau",
@@ -2592,7 +3057,12 @@
           "year": 1981
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Al Jarreau",
+      "story": {
+        "text": "Jarreau는 재즈, 팝, R&B 세 장르에서 모두 그래미 보컬상을 받은 유일한 가수로 알려져 있습니다. 가수가 되기 전에는 재활 상담사로 일했습니다.",
+        "wiki": "Al Jarreau"
+      }
     },
     {
       "id": "george-benson",
@@ -2619,7 +3089,12 @@
           "year": 1978
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "George Benson",
+      "story": {
+        "text": "1976년 Benson의 Breezin'은 빌보드 앨범 차트 1위에 오르며 플래티넘을 기록한 최초의 재즈 앨범 중 하나가 됐습니다. 그는 연주와 같은 음을 목소리로 따라 부르는 스캣으로도 유명합니다.",
+        "wiki": "Breezin'"
+      }
     },
     {
       "id": "grover-washington-jr",
@@ -2646,7 +3121,12 @@
           "year": 1980
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Grover Washington Jr.",
+      "story": {
+        "text": "1980년 Bill Withers가 노래한 Just the Two of Us는 팝 차트 2위까지 올랐고 그래미 R&B 노래상을 받았습니다. 스무드 재즈라는 장르가 대중화되는 데 결정적인 곡이었습니다.",
+        "wiki": "Just the Two of Us (Grover Washington Jr. song)"
+      }
     },
     {
       "id": "wynton-marsalis",
@@ -2673,7 +3153,12 @@
           "year": 1987
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Wynton Marsalis",
+      "story": {
+        "text": "Marsalis는 1983년 그래미에서 재즈 부문과 클래식 부문을 같은 해에 함께 수상한 최초의 음악가가 됐습니다. 1997년에는 Blood on the Fields로 재즈 작품 최초로 퓰리처 음악상을 받았습니다.",
+        "wiki": "Blood on the Fields"
+      }
     },
     {
       "id": "roy-hargrove",
@@ -2701,7 +3186,12 @@
           "year": 1991
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Roy Hargrove",
+      "story": {
+        "text": "고등학생 Hargrove를 처음 발견해 키운 사람은 학교를 방문한 Wynton Marsalis였습니다. 그는 정통 재즈와 함께 D'Angelo, Erykah Badu와 네오소울 음악을 만들고 RH Factor를 이끌었습니다.",
+        "wiki": "Roy Hargrove"
+      }
     },
     {
       "id": "brad-mehldau",
@@ -2728,7 +3218,12 @@
           "year": 2005
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Brad Mehldau",
+      "story": {
+        "text": "Mehldau는 Radiohead의 Exit Music (For a Film), Paranoid Android 같은 곡을 피아노 트리오로 연주했습니다. 록 곡이 새로운 재즈 스탠더드가 될 수 있다는 것을 보여 줬습니다.",
+        "wiki": "Exit Music (For a Film)"
+      }
     },
     {
       "id": "keith-jarrett",
@@ -2755,7 +3250,12 @@
           "year": 1978
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Keith Jarrett",
+      "story": {
+        "text": "1975년 쾰른 공연장에는 요청한 그랜드 피아노 대신 고음이 날카롭고 페달도 말을 듣지 않는 연습용 피아노가 놓여 있었습니다. Jarrett은 망가진 음역을 피해 즉흥으로 연주했고, 그 녹음은 가장 많이 팔린 솔로 피아노 앨범이 됐습니다.",
+        "wiki": "The Köln Concert"
+      }
     },
     {
       "id": "hiromi",
@@ -2782,7 +3282,12 @@
           "year": 2009
         }
       ],
-      "starter": 2
+      "starter": 2,
+      "wiki": "Hiromi Uehara",
+      "story": {
+        "text": "17세의 Hiromi는 도쿄를 방문한 Chick Corea 앞에서 우연히 연주할 기회를 얻었고, 그 자리에서 다음 날 공연에 함께 서자는 제안을 받았습니다.",
+        "wiki": "Hiromi Uehara"
+      }
     },
     {
       "id": "robert-glasper",
@@ -2811,7 +3316,12 @@
           "year": 2007
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Robert Glasper",
+      "story": {
+        "text": "Erykah Badu, Lalah Hathaway 등과 함께 만든 Black Radio는 2013년 그래미 R&B 앨범상을 받았습니다. 재즈 피아니스트의 앨범이 R&B 부문에서 상을 받은 드문 사례입니다.",
+        "wiki": "Black Radio"
+      }
     },
     {
       "id": "esperanza-spalding",
@@ -2838,7 +3348,12 @@
           "year": 2012
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Esperanza Spalding",
+      "story": {
+        "text": "2011년 그래미에서 Spalding은 당시 최고 인기였던 Justin Bieber를 제치고 신인상을 받았습니다. 재즈 아티스트 최초의 그래미 신인상이었습니다.",
+        "wiki": "53rd Annual Grammy Awards"
+      }
     },
     {
       "id": "avishai-cohen",
@@ -2865,7 +3380,12 @@
           "year": 2008
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Avishai Cohen (bassist)",
+      "story": {
+        "text": "뉴욕 길거리와 클럽에서 연주하던 이스라엘 출신 베이시스트 Cohen은 Chick Corea의 눈에 띄어 그의 밴드 Origin에 합류했습니다. 그는 Corea의 레이블에서 첫 앨범을 내며 세계 무대에 데뷔했습니다.",
+        "wiki": "Avishai Cohen (bassist)"
+      }
     },
     {
       "id": "kamasi-washington",
@@ -2892,7 +3412,12 @@
           "year": 2018
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Kamasi Washington",
+      "story": {
+        "text": "Washington의 정규 데뷔작 The Epic은 CD 3장, 약 3시간 분량이었습니다. 같은 해 그는 Kendrick Lamar의 To Pimp a Butterfly에도 참여하며 힙합 세대에게 재즈를 알렸습니다.",
+        "wiki": "The Epic (album)"
+      }
     },
     {
       "id": "diana-krall",
@@ -2919,7 +3444,12 @@
           "year": 2004
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Diana Krall",
+      "story": {
+        "text": "Krall은 2003년 영국의 록 싱어송라이터 Elvis Costello와 결혼했습니다. 두 사람은 이후 Krall의 앨범 The Girl in the Other Room에서 함께 곡을 쓰기도 했습니다.",
+        "wiki": "Elvis Costello"
+      }
     },
     {
       "id": "cassandra-wilson",
@@ -2946,7 +3476,12 @@
           "year": 1995
         }
       ],
-      "starter": 1
+      "starter": 1,
+      "wiki": "Cassandra Wilson",
+      "story": {
+        "text": "Wilson은 Blue Note에서 낸 Blue Light 'til Dawn에서 Robert Johnson의 블루스와 Van Morrison, Joni Mitchell의 곡을 재즈로 다시 불렀습니다. 장르를 넘나드는 선곡으로 1990년대 재즈 보컬의 방향을 바꿨습니다.",
+        "wiki": "Blue Light 'til Dawn"
+      }
     },
     {
       "id": "gregory-porter",
@@ -2973,7 +3508,12 @@
           "year": 2010
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Gregory Porter",
+      "story": {
+        "text": "Porter는 원래 대학 미식축구 장학생이었지만 어깨 부상으로 선수의 꿈을 접었습니다. 그 뒤 음악으로 방향을 틀었고, Liquid Spirit로 그래미 재즈 보컬 앨범상을 받았습니다.",
+        "wiki": "Gregory Porter"
+      }
     },
     {
       "id": "cecile-mclorin-salvant",
@@ -3000,7 +3540,12 @@
           "year": 2022
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Cécile McLorin Salvant",
+      "story": {
+        "text": "프랑스에서 법학과 클래식 성악을 공부하던 Salvant은 2010년 권위 있는 Thelonious Monk 재즈 보컬 콩쿠르에서 우승하며 이름을 알렸습니다. 이후 그래미 재즈 보컬 앨범상을 여러 번 받았습니다.",
+        "wiki": "Cécile McLorin Salvant"
+      }
     },
     {
       "id": "brian-blade",
@@ -3030,7 +3575,12 @@
           "performer": "Brian Blade Fellowship"
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Brian Blade",
+      "story": {
+        "text": "목사의 아들인 Blade는 교회 예배에서 드럼을 치며 자랐습니다. 2000년부터 20년 넘게 Wayne Shorter 쿼텟의 드러머로 함께했습니다.",
+        "wiki": "Wayne Shorter"
+      }
     },
     {
       "id": "bill-frisell",
@@ -3057,7 +3607,12 @@
           "year": 1983
         }
       ],
-      "starter": 0
+      "starter": 0,
+      "wiki": "Bill Frisell",
+      "story": {
+        "text": "Frisell은 컨트리, 포크, 블루그래스까지 미국 음악 전반을 재즈 기타로 다시 풀어내 '아메리카나 재즈'라는 자기만의 영역을 만들었습니다. 그는 원래 클라리넷으로 음악을 시작했습니다.",
+        "wiki": "Bill Frisell"
+      }
     }
   ]
 }

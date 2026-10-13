@@ -58,8 +58,21 @@ class FakeLinker:
         return None if track["title"].startswith("B") else "https://music.youtube.com/watch?v=abcdefghijk"
 
 
+def fake_resolve(titles):
+    out = {}
+    for t in titles:
+        if t == "Missing Page":
+            out[t] = None
+        else:
+            out[t] = {"en_title": t, "en_url": "https://en.wikipedia.org/wiki/" + t.replace(" ", "_"),
+                      "ko_title": "마일스 데이비스" if t == "Miles Davis" else None,
+                      "ko_url": "https://ko.wikipedia.org/wiki/x" if t == "Miles Davis" else None}
+    return out
+
+
 @pytest.fixture
 def service(tmp_path, monkeypatch):
+    monkeypatch.setattr("jazzbot.service.safe_resolve", fake_resolve)
     monkeypatch.setenv("JAZZBOT_DATA_DIR", str(tmp_path))
     monkeypatch.setenv("JAZZBOT_ARTISTS_FILE", str(ROOT / "data" / "artists.json"))
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "111")
@@ -87,7 +100,7 @@ def test_render_marks_missing_links_and_buttons(service):
     text, buttons = render(entry)
     assert "Miles Davis" in text and "10월 12일 (월)" in text
     assert "링크 없음" in text  # "Blue in Green"
-    assert len(buttons) == 2 and buttons[0][0]["text"].startswith("▶ ①")
+    assert len(buttons) == 3 and buttons[0][0]["text"].startswith("▶ ①")  # 곡 2개 + 위키
     assert "이 곡부터 들어보세요" in text and "So What" in text
     assert len(text) <= 4096
     assert "Miles Davis" in render_history([entry])
@@ -150,3 +163,62 @@ def test_bot_commands(service, tmp_path):
     assert "랜덤 재즈 아티스트" in tg.sent[2][1]
     assert service.history.entries[-1]["kind"] == "random"
     assert "아직 발송 기록이 없어요" in tg.sent[3][1]  # random은 history 목록에 안 나옴
+
+
+def test_bot_ignores_everyone_without_allowed_chats(service, tmp_path):
+    tg = FakeTG()
+    bot = Bot(service, tg)
+    bot.allowed = frozenset()
+    bot.process([{"update_id": 1, "message": {"chat": {"id": 5}, "text": "/random"}}], tmp_path / "s.json")
+    assert tg.sent == []
+
+
+def test_bot_main_skips_polling_without_chat_id(monkeypatch):
+    from jazzbot import bot as botmod
+
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "123:abc")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "")
+    monkeypatch.setenv("TELEGRAM_ALLOWED_CHAT_IDS", "")
+    monkeypatch.setattr(botmod, "TelegramClient", lambda *a: pytest.fail("getUpdates를 호출하면 안 됨"))
+    assert botmod.main(["--once"]) == 0
+
+
+def test_story_and_wiki_in_message(service):
+    artist = next(a for a in ARTISTS if a["id"] == "miles-davis")
+    text, buttons = render(service.build_entry(artist, "daily", "2026-10-12", 1))
+    assert "📖 <b>흥미로운 이야기</b>" in text and "첫 테이크" in text
+    assert 'href="https://en.wikipedia.org/wiki/Kind_of_Blue">Wikipedia: Kind of Blue</a>' in text
+    assert ">한국어</a> · <a" in text  # 한국어판이 있으면 함께 표시
+    assert buttons[-1][0]["url"] == "https://ko.wikipedia.org/wiki/x"
+
+
+def test_missing_story_page_falls_back_to_artist_page(service):
+    artist = json.loads(json.dumps(next(a for a in ARTISTS if a["id"] == "bill-frisell")))
+    artist["story"]["wiki"] = "Missing Page"
+    entry = service.build_entry(artist, "daily", "2026-10-12", 1)
+    assert entry["story"]["link"]["url"].endswith("/Bill_Frisell")
+
+
+def test_old_entries_without_story_still_render():
+    entry = json.load(open(ROOT / "examples" / "sample_entry.json"))
+    entry.pop("story", None), entry.pop("wiki", None)
+    text, _ = render(entry)
+    assert "Miles Davis" in text and "흥미로운 이야기" not in text
+
+
+def test_wiki_resolve_parses_api(monkeypatch):
+    from jazzbot import wiki
+
+    monkeypatch.setattr(wiki, "_query", lambda titles: {
+        "normalized": [{"from": "miles davis", "to": "Miles davis"}],
+        "redirects": [{"from": "Miles davis", "to": "Miles Davis"}],
+        "pages": [
+            {"title": "Miles Davis", "langlinks": [{"lang": "ko", "title": "마일스 데이비스"}]},
+            {"title": "Jim Hall", "pageprops": {"disambiguation": ""}},
+            {"title": "Nope", "missing": True},
+        ],
+    })
+    r = wiki.resolve(["miles davis", "Jim Hall", "Nope"])
+    assert r["miles davis"]["ko_url"] == "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%BC%EC%8A%A4_%EB%8D%B0%EC%9D%B4%EB%B9%84%EC%8A%A4"
+    assert r["miles davis"]["en_url"] == "https://en.wikipedia.org/wiki/Miles_Davis"
+    assert r["Jim Hall"] is None and r["Nope"] is None
