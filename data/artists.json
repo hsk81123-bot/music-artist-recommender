@@ -1,0 +1,3063 @@
+{
+  "version": 1,
+  "artists": [
+    {
+      "id": "louis-armstrong",
+      "name": "Louis Armstrong",
+      "active": "1920s–1971",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫, 보컬",
+      "era": "swing",
+      "style": "뉴올리언스 재즈, 스윙",
+      "tracks": [
+        {
+          "title": "West End Blues",
+          "album": "Single",
+          "year": 1928
+        },
+        {
+          "title": "Hello, Dolly!",
+          "album": "Hello, Dolly!",
+          "year": 1964
+        },
+        {
+          "title": "What a Wonderful World",
+          "album": "What a Wonderful World",
+          "year": 1968
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "duke-ellington",
+      "name": "Duke Ellington",
+      "active": "1920s–1974",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 작·편곡, 밴드리더",
+      "era": "swing",
+      "style": "빅밴드 스윙",
+      "tracks": [
+        {
+          "title": "Take the 'A' Train",
+          "album": "Single",
+          "year": 1941
+        },
+        {
+          "title": "Mood Indigo",
+          "album": "Single",
+          "year": 1930
+        },
+        {
+          "title": "Diminuendo and Crescendo in Blue",
+          "album": "Ellington at Newport",
+          "year": 1956
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "count-basie",
+      "name": "Count Basie",
+      "active": "1930s–1984",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 밴드리더",
+      "era": "swing",
+      "style": "캔자스시티 스윙, 빅밴드",
+      "tracks": [
+        {
+          "title": "One O'Clock Jump",
+          "album": "Single",
+          "year": 1937
+        },
+        {
+          "title": "Li'l Darlin'",
+          "album": "The Atomic Mr. Basie",
+          "year": 1958
+        },
+        {
+          "title": "April in Paris",
+          "album": "April in Paris",
+          "year": 1957
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "coleman-hawkins",
+      "name": "Coleman Hawkins",
+      "active": "1920s–1969",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "swing",
+      "style": "스윙",
+      "tracks": [
+        {
+          "title": "Body and Soul",
+          "album": "Single",
+          "year": 1939
+        },
+        {
+          "title": "Picasso",
+          "album": "The Jazz Scene",
+          "year": 1949
+        },
+        {
+          "title": "Stuffy",
+          "album": "Single",
+          "year": 1945
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "lester-young",
+      "name": "Lester Young",
+      "active": "1930s–1959",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "swing",
+      "style": "캔자스시티 스윙",
+      "tracks": [
+        {
+          "title": "Lester Leaps In",
+          "album": "Single",
+          "year": 1939
+        },
+        {
+          "title": "Oh, Lady Be Good",
+          "album": "Single",
+          "year": 1936
+        },
+        {
+          "title": "These Foolish Things",
+          "album": "Single",
+          "year": 1945
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "billie-holiday",
+      "name": "Billie Holiday",
+      "active": "1930s–1959",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "swing",
+      "style": "스윙, 재즈 보컬",
+      "tracks": [
+        {
+          "title": "Strange Fruit",
+          "album": "Single",
+          "year": 1939
+        },
+        {
+          "title": "God Bless the Child",
+          "album": "Single",
+          "year": 1941
+        },
+        {
+          "title": "I'm a Fool to Want You",
+          "album": "Lady in Satin",
+          "year": 1958
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "ella-fitzgerald",
+      "name": "Ella Fitzgerald",
+      "active": "1930s–1990s",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "swing",
+      "style": "스윙, 스캣, 송북",
+      "tracks": [
+        {
+          "title": "A-Tisket, A-Tasket",
+          "album": "Single",
+          "year": 1938
+        },
+        {
+          "title": "Mack the Knife",
+          "album": "Ella in Berlin: Mack the Knife",
+          "year": 1960
+        },
+        {
+          "title": "Cheek to Cheek",
+          "album": "Ella and Louis",
+          "year": 1956
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "django-reinhardt",
+      "name": "Django Reinhardt",
+      "active": "1930s–1953",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "swing",
+      "style": "집시 재즈",
+      "tracks": [
+        {
+          "title": "Minor Swing",
+          "album": "Single",
+          "year": 1937
+        },
+        {
+          "title": "Nuages",
+          "album": "Single",
+          "year": 1940
+        },
+        {
+          "title": "Dinah",
+          "album": "Single",
+          "year": 1934
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "charlie-christian",
+      "name": "Charlie Christian",
+      "active": "1939–1942",
+      "instrument": "guitar",
+      "instrument_detail": "일렉트릭 기타",
+      "era": "swing",
+      "style": "스윙, 초기 비밥",
+      "tracks": [
+        {
+          "title": "Solo Flight",
+          "album": "Single",
+          "year": 1941,
+          "performer": "Benny Goodman"
+        },
+        {
+          "title": "Seven Come Eleven",
+          "album": "Single",
+          "year": 1939,
+          "performer": "Benny Goodman Sextet"
+        },
+        {
+          "title": "Air Mail Special",
+          "album": "Single",
+          "year": 1941,
+          "performer": "Benny Goodman Sextet"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "gene-krupa",
+      "name": "Gene Krupa",
+      "active": "1920s–1973",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "swing",
+      "style": "빅밴드 스윙",
+      "tracks": [
+        {
+          "title": "Sing, Sing, Sing",
+          "album": "Single",
+          "year": 1937,
+          "performer": "Benny Goodman"
+        },
+        {
+          "title": "Drum Boogie",
+          "album": "Single",
+          "year": 1941
+        },
+        {
+          "title": "Let Me Off Uptown",
+          "album": "Single",
+          "year": 1941
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "chick-webb",
+      "name": "Chick Webb",
+      "active": "1920s–1939",
+      "instrument": "drums",
+      "instrument_detail": "드럼, 밴드리더",
+      "era": "swing",
+      "style": "할렘 스윙",
+      "tracks": [
+        {
+          "title": "Stompin' at the Savoy",
+          "album": "Single",
+          "year": 1934
+        },
+        {
+          "title": "Liza",
+          "album": "Single",
+          "year": 1938
+        },
+        {
+          "title": "Harlem Congo",
+          "album": "Single",
+          "year": 1937
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "jimmy-blanton",
+      "name": "Jimmy Blanton",
+      "active": "1937–1942",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "swing",
+      "style": "스윙",
+      "tracks": [
+        {
+          "title": "Jack the Bear",
+          "album": "Single",
+          "year": 1940,
+          "performer": "Duke Ellington"
+        },
+        {
+          "title": "Pitter Panther Patter",
+          "album": "Single",
+          "year": 1940,
+          "performer": "Duke Ellington"
+        },
+        {
+          "title": "Ko-Ko",
+          "album": "Single",
+          "year": 1940,
+          "performer": "Duke Ellington"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "art-tatum",
+      "name": "Art Tatum",
+      "active": "1930s–1956",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "swing",
+      "style": "스트라이드, 스윙 피아노",
+      "tracks": [
+        {
+          "title": "Tiger Rag",
+          "album": "Single",
+          "year": 1933
+        },
+        {
+          "title": "Tea for Two",
+          "album": "Single",
+          "year": 1933
+        },
+        {
+          "title": "Willow Weep for Me",
+          "album": "Single",
+          "year": 1949
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "fats-waller",
+      "name": "Fats Waller",
+      "active": "1920s–1943",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 보컬",
+      "era": "swing",
+      "style": "스트라이드 피아노",
+      "tracks": [
+        {
+          "title": "Ain't Misbehavin'",
+          "album": "Single",
+          "year": 1929
+        },
+        {
+          "title": "Honeysuckle Rose",
+          "album": "Single",
+          "year": 1934
+        },
+        {
+          "title": "Jitterbug Waltz",
+          "album": "Single",
+          "year": 1942
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "roy-eldridge",
+      "name": "Roy Eldridge",
+      "active": "1930s–1970s",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "swing",
+      "style": "스윙",
+      "tracks": [
+        {
+          "title": "Rockin' Chair",
+          "album": "Single",
+          "year": 1941,
+          "performer": "Gene Krupa"
+        },
+        {
+          "title": "After You've Gone",
+          "album": "Single",
+          "year": 1937
+        },
+        {
+          "title": "Heckler's Hop",
+          "album": "Single",
+          "year": 1937
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "ben-webster",
+      "name": "Ben Webster",
+      "active": "1930s–1973",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "swing",
+      "style": "스윙, 발라드",
+      "tracks": [
+        {
+          "title": "Cotton Tail",
+          "album": "Single",
+          "year": 1940,
+          "performer": "Duke Ellington"
+        },
+        {
+          "title": "Chelsea Bridge",
+          "album": "Single",
+          "year": 1941,
+          "performer": "Duke Ellington"
+        },
+        {
+          "title": "Soulville",
+          "album": "Soulville",
+          "year": 1957
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "charlie-parker",
+      "name": "Charlie Parker",
+      "active": "1940s–1955",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "bebop",
+      "style": "비밥",
+      "tracks": [
+        {
+          "title": "Ko-Ko",
+          "album": "Single",
+          "year": 1945
+        },
+        {
+          "title": "Ornithology",
+          "album": "Single",
+          "year": 1946
+        },
+        {
+          "title": "Parker's Mood",
+          "album": "Single",
+          "year": 1948
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "dizzy-gillespie",
+      "name": "Dizzy Gillespie",
+      "active": "1940s–1993",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "bebop",
+      "style": "비밥, 아프로-쿠반 재즈",
+      "tracks": [
+        {
+          "title": "Salt Peanuts",
+          "album": "Single",
+          "year": 1945
+        },
+        {
+          "title": "A Night in Tunisia",
+          "album": "Single",
+          "year": 1946
+        },
+        {
+          "title": "Manteca",
+          "album": "Single",
+          "year": 1947
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "bud-powell",
+      "name": "Bud Powell",
+      "active": "1940s–1966",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "bebop",
+      "style": "비밥 피아노",
+      "tracks": [
+        {
+          "title": "Un Poco Loco",
+          "album": "The Amazing Bud Powell",
+          "year": 1951
+        },
+        {
+          "title": "Tempus Fugue-It",
+          "album": "Single",
+          "year": 1949
+        },
+        {
+          "title": "Cleopatra's Dream",
+          "album": "The Scene Changes",
+          "year": 1959
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "thelonious-monk",
+      "name": "Thelonious Monk",
+      "active": "1940s–1970s",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 작곡",
+      "era": "bebop",
+      "style": "비밥",
+      "tracks": [
+        {
+          "title": "'Round Midnight",
+          "album": "Genius of Modern Music, Vol. 1",
+          "year": 1951
+        },
+        {
+          "title": "Blue Monk",
+          "album": "Thelonious Monk Trio",
+          "year": 1954
+        },
+        {
+          "title": "Brilliant Corners",
+          "album": "Brilliant Corners",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "max-roach",
+      "name": "Max Roach",
+      "active": "1940s–2000s",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "bebop",
+      "style": "비밥, 하드밥",
+      "tracks": [
+        {
+          "title": "Garvey's Ghost",
+          "album": "Percussion Bitter Sweet",
+          "year": 1961
+        },
+        {
+          "title": "Freedom Day",
+          "album": "We Insist!",
+          "year": 1960
+        },
+        {
+          "title": "The Drum Also Waltzes",
+          "album": "Drums Unlimited",
+          "year": 1966
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "ray-brown",
+      "name": "Ray Brown",
+      "active": "1940s–2002",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "bebop",
+      "style": "비밥, 메인스트림",
+      "tracks": [
+        {
+          "title": "One Bass Hit",
+          "album": "Single",
+          "year": 1946,
+          "performer": "Dizzy Gillespie"
+        },
+        {
+          "title": "Ray's Idea",
+          "album": "Single",
+          "year": 1946,
+          "performer": "Dizzy Gillespie"
+        },
+        {
+          "title": "Night Train",
+          "album": "Night Train",
+          "year": 1963,
+          "performer": "Oscar Peterson Trio"
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "sarah-vaughan",
+      "name": "Sarah Vaughan",
+      "active": "1940s–1990",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "bebop",
+      "style": "비밥 보컬",
+      "tracks": [
+        {
+          "title": "Lullaby of Birdland",
+          "album": "Sarah Vaughan",
+          "year": 1955
+        },
+        {
+          "title": "Embraceable You",
+          "album": "Sarah Vaughan",
+          "year": 1955
+        },
+        {
+          "title": "Tenderly",
+          "album": "Single",
+          "year": 1947
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "fats-navarro",
+      "name": "Fats Navarro",
+      "active": "1940s–1950",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "bebop",
+      "style": "비밥",
+      "tracks": [
+        {
+          "title": "Our Delight",
+          "album": "Single",
+          "year": 1948,
+          "performer": "Tadd Dameron"
+        },
+        {
+          "title": "Nostalgia",
+          "album": "Single",
+          "year": 1947
+        },
+        {
+          "title": "Lady Bird",
+          "album": "Single",
+          "year": 1948,
+          "performer": "Tadd Dameron"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "barney-kessel",
+      "name": "Barney Kessel",
+      "active": "1940s–1992",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "bebop",
+      "style": "비밥 기타",
+      "tracks": [
+        {
+          "title": "Easy Like",
+          "album": "Easy Like",
+          "year": 1956
+        },
+        {
+          "title": "Jordu",
+          "album": "The Poll Winners",
+          "year": 1957
+        },
+        {
+          "title": "Satin Doll",
+          "album": "The Poll Winners",
+          "year": 1957
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "oscar-peterson",
+      "name": "Oscar Peterson",
+      "active": "1940s–2007",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "bebop",
+      "style": "비밥, 스윙 피아노",
+      "tracks": [
+        {
+          "title": "C Jam Blues",
+          "album": "Night Train",
+          "year": 1963
+        },
+        {
+          "title": "Hymn to Freedom",
+          "album": "Night Train",
+          "year": 1963
+        },
+        {
+          "title": "Tenderly",
+          "album": "Single",
+          "year": 1950
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "erroll-garner",
+      "name": "Erroll Garner",
+      "active": "1940s–1977",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "bebop",
+      "style": "메인스트림 피아노",
+      "tracks": [
+        {
+          "title": "Misty",
+          "album": "Contrasts",
+          "year": 1954
+        },
+        {
+          "title": "I'll Remember April",
+          "album": "Concert by the Sea",
+          "year": 1955
+        },
+        {
+          "title": "Autumn Leaves",
+          "album": "Concert by the Sea",
+          "year": 1955
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "chet-baker",
+      "name": "Chet Baker",
+      "active": "1950s–1988",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫, 보컬",
+      "era": "cool",
+      "style": "웨스트코스트 쿨 재즈",
+      "tracks": [
+        {
+          "title": "My Funny Valentine",
+          "album": "Chet Baker Sings",
+          "year": 1954
+        },
+        {
+          "title": "But Not for Me",
+          "album": "Chet Baker Sings",
+          "year": 1954
+        },
+        {
+          "title": "Almost Blue",
+          "album": "Let's Get Lost",
+          "year": 1989
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "stan-getz",
+      "name": "Stan Getz",
+      "active": "1940s–1991",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "cool",
+      "style": "쿨 재즈, 보사노바",
+      "tracks": [
+        {
+          "title": "The Girl from Ipanema",
+          "album": "Getz/Gilberto",
+          "year": 1964
+        },
+        {
+          "title": "Desafinado",
+          "album": "Jazz Samba",
+          "year": 1962
+        },
+        {
+          "title": "Moonlight in Vermont",
+          "album": "Single",
+          "year": 1952,
+          "performer": "Johnny Smith"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "paul-desmond",
+      "name": "Paul Desmond",
+      "active": "1950s–1977",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "cool",
+      "style": "쿨 재즈",
+      "tracks": [
+        {
+          "title": "Take Five",
+          "album": "Time Out",
+          "year": 1959,
+          "performer": "The Dave Brubeck Quartet"
+        },
+        {
+          "title": "Take Ten",
+          "album": "Take Ten",
+          "year": 1963
+        },
+        {
+          "title": "Bossa Antigua",
+          "album": "Bossa Antigua",
+          "year": 1965
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "dave-brubeck",
+      "name": "Dave Brubeck",
+      "active": "1950s–2012",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "cool",
+      "style": "쿨 재즈, 변박",
+      "tracks": [
+        {
+          "title": "Blue Rondo à la Turk",
+          "album": "Time Out",
+          "year": 1959
+        },
+        {
+          "title": "Unsquare Dance",
+          "album": "Time Further Out",
+          "year": 1961
+        },
+        {
+          "title": "In Your Own Sweet Way",
+          "album": "Brubeck Plays Brubeck",
+          "year": 1956
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "gerry-mulligan",
+      "name": "Gerry Mulligan",
+      "active": "1940s–1996",
+      "instrument": "saxophone",
+      "instrument_detail": "바리톤 색소폰",
+      "era": "cool",
+      "style": "웨스트코스트 쿨 재즈",
+      "tracks": [
+        {
+          "title": "Line for Lyons",
+          "album": "Single",
+          "year": 1952
+        },
+        {
+          "title": "Walkin' Shoes",
+          "album": "Single",
+          "year": 1953
+        },
+        {
+          "title": "Bernie's Tune",
+          "album": "Single",
+          "year": 1952
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "lee-konitz",
+      "name": "Lee Konitz",
+      "active": "1940s–2020",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "cool",
+      "style": "쿨 재즈, 트리스타노 학파",
+      "tracks": [
+        {
+          "title": "Subconscious-Lee",
+          "album": "Single",
+          "year": 1949
+        },
+        {
+          "title": "I Remember You",
+          "album": "Motion",
+          "year": 1961
+        },
+        {
+          "title": "All of Me",
+          "album": "Motion",
+          "year": 1961
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "lennie-tristano",
+      "name": "Lennie Tristano",
+      "active": "1940s–1978",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "cool",
+      "style": "쿨 재즈",
+      "tracks": [
+        {
+          "title": "Line Up",
+          "album": "Lennie Tristano",
+          "year": 1956
+        },
+        {
+          "title": "Wow",
+          "album": "Single",
+          "year": 1949
+        },
+        {
+          "title": "Requiem",
+          "album": "Lennie Tristano",
+          "year": 1956
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "john-lewis",
+      "name": "John Lewis",
+      "active": "1940s–2001",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 작곡",
+      "era": "cool",
+      "style": "쿨 재즈, 서드 스트림",
+      "tracks": [
+        {
+          "title": "Django",
+          "album": "Django",
+          "year": 1956,
+          "performer": "The Modern Jazz Quartet"
+        },
+        {
+          "title": "Concorde",
+          "album": "Concorde",
+          "year": 1955,
+          "performer": "The Modern Jazz Quartet"
+        },
+        {
+          "title": "Softly, as in a Morning Sunrise",
+          "album": "Concorde",
+          "year": 1955,
+          "performer": "The Modern Jazz Quartet"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "june-christy",
+      "name": "June Christy",
+      "active": "1940s–1990",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "cool",
+      "style": "쿨 재즈 보컬",
+      "tracks": [
+        {
+          "title": "Something Cool",
+          "album": "Something Cool",
+          "year": 1955
+        },
+        {
+          "title": "Midnight Sun",
+          "album": "Something Cool",
+          "year": 1955
+        },
+        {
+          "title": "It Could Happen to You",
+          "album": "Something Cool",
+          "year": 1955
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "anita-o-day",
+      "name": "Anita O'Day",
+      "active": "1940s–2006",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "cool",
+      "style": "쿨 재즈 보컬, 스윙",
+      "tracks": [
+        {
+          "title": "Let Me Off Uptown",
+          "album": "Single",
+          "year": 1941,
+          "performer": "Gene Krupa"
+        },
+        {
+          "title": "Them There Eyes",
+          "album": "Anita Sings the Most",
+          "year": 1957
+        },
+        {
+          "title": "Tenderly",
+          "album": "Anita Sings the Most",
+          "year": 1957
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "scott-lafaro",
+      "name": "Scott LaFaro",
+      "active": "1950s–1961",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "cool",
+      "style": "피아노 트리오, 인터플레이",
+      "tracks": [
+        {
+          "title": "Gloria's Step",
+          "album": "Sunday at the Village Vanguard",
+          "year": 1961,
+          "performer": "Bill Evans Trio"
+        },
+        {
+          "title": "Jade Visions",
+          "album": "Sunday at the Village Vanguard",
+          "year": 1961,
+          "performer": "Bill Evans Trio"
+        },
+        {
+          "title": "Solar",
+          "album": "Sunday at the Village Vanguard",
+          "year": 1961,
+          "performer": "Bill Evans Trio"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "shelly-manne",
+      "name": "Shelly Manne",
+      "active": "1940s–1984",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "cool",
+      "style": "웨스트코스트 재즈",
+      "tracks": [
+        {
+          "title": "Get Me to the Church on Time",
+          "album": "My Fair Lady",
+          "year": 1956
+        },
+        {
+          "title": "I Could Have Danced All Night",
+          "album": "My Fair Lady",
+          "year": 1956
+        },
+        {
+          "title": "Wouldn't It Be Loverly",
+          "album": "My Fair Lady",
+          "year": 1956
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "jim-hall",
+      "name": "Jim Hall",
+      "active": "1950s–2013",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "cool",
+      "style": "쿨 재즈, 실내악적 재즈",
+      "tracks": [
+        {
+          "title": "My Funny Valentine",
+          "album": "Undercurrent",
+          "year": 1962,
+          "performer": "Bill Evans & Jim Hall"
+        },
+        {
+          "title": "Skating in Central Park",
+          "album": "Undercurrent",
+          "year": 1962,
+          "performer": "Bill Evans & Jim Hall"
+        },
+        {
+          "title": "Concierto de Aranjuez",
+          "album": "Concierto",
+          "year": 1975
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "art-pepper",
+      "name": "Art Pepper",
+      "active": "1940s–1982",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "cool",
+      "style": "웨스트코스트 재즈",
+      "tracks": [
+        {
+          "title": "You'd Be So Nice to Come Home To",
+          "album": "Art Pepper Meets the Rhythm Section",
+          "year": 1957
+        },
+        {
+          "title": "Straight Life",
+          "album": "Art Pepper Meets the Rhythm Section",
+          "year": 1957
+        },
+        {
+          "title": "Star Eyes",
+          "album": "Art Pepper Meets the Rhythm Section",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "art-blakey",
+      "name": "Art Blakey",
+      "active": "1940s–1990",
+      "instrument": "drums",
+      "instrument_detail": "드럼, 밴드리더",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Moanin'",
+          "album": "Moanin'",
+          "year": 1958
+        },
+        {
+          "title": "Blues March",
+          "album": "Moanin'",
+          "year": 1958
+        },
+        {
+          "title": "A Night in Tunisia",
+          "album": "A Night in Tunisia",
+          "year": 1961
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "horace-silver",
+      "name": "Horace Silver",
+      "active": "1950s–2014",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 작곡",
+      "era": "hardbop",
+      "style": "하드밥, 펑키 재즈",
+      "tracks": [
+        {
+          "title": "Song for My Father",
+          "album": "Song for My Father",
+          "year": 1965
+        },
+        {
+          "title": "The Preacher",
+          "album": "Horace Silver and the Jazz Messengers",
+          "year": 1955
+        },
+        {
+          "title": "Señor Blues",
+          "album": "6 Pieces of Silver",
+          "year": 1956
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "clifford-brown",
+      "name": "Clifford Brown",
+      "active": "1950s–1956",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Joy Spring",
+          "album": "Clifford Brown & Max Roach",
+          "year": 1955
+        },
+        {
+          "title": "Daahoud",
+          "album": "Clifford Brown & Max Roach",
+          "year": 1955
+        },
+        {
+          "title": "Sandu",
+          "album": "Study in Brown",
+          "year": 1955
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "lee-morgan",
+      "name": "Lee Morgan",
+      "active": "1950s–1972",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "hardbop",
+      "style": "하드밥, 소울 재즈",
+      "tracks": [
+        {
+          "title": "The Sidewinder",
+          "album": "The Sidewinder",
+          "year": 1964
+        },
+        {
+          "title": "Ceora",
+          "album": "Cornbread",
+          "year": 1967
+        },
+        {
+          "title": "I Remember Clifford",
+          "album": "Lee Morgan Vol. 3",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "sonny-rollins",
+      "name": "Sonny Rollins",
+      "active": "1950s–2010s",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "St. Thomas",
+          "album": "Saxophone Colossus",
+          "year": 1957
+        },
+        {
+          "title": "Blue 7",
+          "album": "Saxophone Colossus",
+          "year": 1957
+        },
+        {
+          "title": "Way Out West",
+          "album": "Way Out West",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "cannonball-adderley",
+      "name": "Cannonball Adderley",
+      "active": "1950s–1975",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "hardbop",
+      "style": "하드밥, 소울 재즈",
+      "tracks": [
+        {
+          "title": "Mercy, Mercy, Mercy",
+          "album": "Mercy, Mercy, Mercy! Live at \"The Club\"",
+          "year": 1966
+        },
+        {
+          "title": "Autumn Leaves",
+          "album": "Somethin' Else",
+          "year": 1958
+        },
+        {
+          "title": "Work Song",
+          "album": "Them Dirty Blues",
+          "year": 1960
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "dexter-gordon",
+      "name": "Dexter Gordon",
+      "active": "1940s–1990",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "hardbop",
+      "style": "비밥, 하드밥",
+      "tracks": [
+        {
+          "title": "Cheese Cake",
+          "album": "Go",
+          "year": 1962
+        },
+        {
+          "title": "I Guess I'll Hang My Tears Out to Dry",
+          "album": "Go",
+          "year": 1962
+        },
+        {
+          "title": "Society Red",
+          "album": "Doin' Allright",
+          "year": 1961
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "hank-mobley",
+      "name": "Hank Mobley",
+      "active": "1950s–1986",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Soul Station",
+          "album": "Soul Station",
+          "year": 1960
+        },
+        {
+          "title": "This I Dig of You",
+          "album": "Soul Station",
+          "year": 1960
+        },
+        {
+          "title": "Recado Bossa Nova",
+          "album": "Dippin'",
+          "year": 1966
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "wes-montgomery",
+      "name": "Wes Montgomery",
+      "active": "1950s–1968",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "hardbop",
+      "style": "하드밥, 소울 재즈",
+      "tracks": [
+        {
+          "title": "Four on Six",
+          "album": "The Incredible Jazz Guitar of Wes Montgomery",
+          "year": 1960
+        },
+        {
+          "title": "West Coast Blues",
+          "album": "The Incredible Jazz Guitar of Wes Montgomery",
+          "year": 1960
+        },
+        {
+          "title": "Bumpin' on Sunset",
+          "album": "Tequila",
+          "year": 1966
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "grant-green",
+      "name": "Grant Green",
+      "active": "1950s–1979",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "hardbop",
+      "style": "하드밥, 소울 재즈",
+      "tracks": [
+        {
+          "title": "Idle Moments",
+          "album": "Idle Moments",
+          "year": 1965
+        },
+        {
+          "title": "Jean De Fleur",
+          "album": "Idle Moments",
+          "year": 1965
+        },
+        {
+          "title": "Ain't It Funky Now",
+          "album": "Green Is Beautiful",
+          "year": 1970
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "kenny-burrell",
+      "name": "Kenny Burrell",
+      "active": "1950s–2010s",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "hardbop",
+      "style": "하드밥, 블루스 재즈",
+      "tracks": [
+        {
+          "title": "Chitlins con Carne",
+          "album": "Midnight Blue",
+          "year": 1963
+        },
+        {
+          "title": "Midnight Blue",
+          "album": "Midnight Blue",
+          "year": 1963
+        },
+        {
+          "title": "Wavy Gravy",
+          "album": "Midnight Blue",
+          "year": 1963
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "paul-chambers",
+      "name": "Paul Chambers",
+      "active": "1950s–1969",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Yesterdays",
+          "album": "Bass on Top",
+          "year": 1957
+        },
+        {
+          "title": "Dear Old Stockholm",
+          "album": "Bass on Top",
+          "year": 1957
+        },
+        {
+          "title": "Whims of Chambers",
+          "album": "Whims of Chambers",
+          "year": 1957
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "charles-mingus",
+      "name": "Charles Mingus",
+      "active": "1940s–1979",
+      "instrument": "bass",
+      "instrument_detail": "베이스, 작곡, 밴드리더",
+      "era": "hardbop",
+      "style": "하드밥, 포스트밥",
+      "tracks": [
+        {
+          "title": "Goodbye Pork Pie Hat",
+          "album": "Mingus Ah Um",
+          "year": 1959
+        },
+        {
+          "title": "Better Git It in Your Soul",
+          "album": "Mingus Ah Um",
+          "year": 1959
+        },
+        {
+          "title": "Haitian Fight Song",
+          "album": "The Clown",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "kenny-dorham",
+      "name": "Kenny Dorham",
+      "active": "1940s–1972",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Una Mas",
+          "album": "Una Mas",
+          "year": 1963
+        },
+        {
+          "title": "Lotus Blossom",
+          "album": "Quiet Kenny",
+          "year": 1959
+        },
+        {
+          "title": "Blue Bossa",
+          "album": "Page One",
+          "year": 1963,
+          "performer": "Joe Henderson"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "lambert-hendricks-and-ross",
+      "name": "Lambert, Hendricks & Ross",
+      "active": "1957–1962",
+      "instrument": "vocal",
+      "instrument_detail": "보컬 트리오",
+      "era": "hardbop",
+      "style": "보컬리즈",
+      "tracks": [
+        {
+          "title": "Cloudburst",
+          "album": "The Hottest New Group in Jazz",
+          "year": 1959
+        },
+        {
+          "title": "Twisted",
+          "album": "The Hottest New Group in Jazz",
+          "year": 1959
+        },
+        {
+          "title": "Moanin'",
+          "album": "The Hottest New Group in Jazz",
+          "year": 1959
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "dinah-washington",
+      "name": "Dinah Washington",
+      "active": "1940s–1963",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "hardbop",
+      "style": "재즈 보컬, 블루스",
+      "tracks": [
+        {
+          "title": "What a Diff'rence a Day Makes",
+          "album": "What a Diff'rence a Day Makes!",
+          "year": 1959
+        },
+        {
+          "title": "Unforgettable",
+          "album": "Unforgettable",
+          "year": 1961
+        },
+        {
+          "title": "Mad About the Boy",
+          "album": "Single",
+          "year": 1952
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "sonny-clark",
+      "name": "Sonny Clark",
+      "active": "1950s–1963",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "hardbop",
+      "style": "하드밥",
+      "tracks": [
+        {
+          "title": "Cool Struttin'",
+          "album": "Cool Struttin'",
+          "year": 1958
+        },
+        {
+          "title": "Blue Minor",
+          "album": "Cool Struttin'",
+          "year": 1958
+        },
+        {
+          "title": "Sippin' at Bells",
+          "album": "Cool Struttin'",
+          "year": 1958
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "roy-haynes",
+      "name": "Roy Haynes",
+      "active": "1940s–2024",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "hardbop",
+      "style": "하드밥, 포스트밥",
+      "tracks": [
+        {
+          "title": "We Three",
+          "album": "We Three",
+          "year": 1959
+        },
+        {
+          "title": "Snap Crackle",
+          "album": "Out of the Afternoon",
+          "year": 1962
+        },
+        {
+          "title": "Fly Me to the Moon",
+          "album": "Out of the Afternoon",
+          "year": 1962
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "miles-davis",
+      "name": "Miles Davis",
+      "active": "1940s–1991",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "modal",
+      "style": "모달 재즈 (쿨·하드밥·퓨전 전반)",
+      "tracks": [
+        {
+          "title": "So What",
+          "album": "Kind of Blue",
+          "year": 1959
+        },
+        {
+          "title": "Blue in Green",
+          "album": "Kind of Blue",
+          "year": 1959
+        },
+        {
+          "title": "'Round Midnight",
+          "album": "'Round About Midnight",
+          "year": 1957
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "john-coltrane",
+      "name": "John Coltrane",
+      "active": "1950s–1967",
+      "instrument": "saxophone",
+      "instrument_detail": "테너·소프라노 색소폰",
+      "era": "modal",
+      "style": "모달 재즈, 스피리추얼 재즈",
+      "tracks": [
+        {
+          "title": "Giant Steps",
+          "album": "Giant Steps",
+          "year": 1960
+        },
+        {
+          "title": "My Favorite Things",
+          "album": "My Favorite Things",
+          "year": 1961
+        },
+        {
+          "title": "Acknowledgement",
+          "album": "A Love Supreme",
+          "year": 1965
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "bill-evans",
+      "name": "Bill Evans",
+      "active": "1950s–1980",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "modal",
+      "style": "모달 재즈, 피아노 트리오",
+      "tracks": [
+        {
+          "title": "Waltz for Debby",
+          "album": "Waltz for Debby",
+          "year": 1962
+        },
+        {
+          "title": "Peace Piece",
+          "album": "Everybody Digs Bill Evans",
+          "year": 1959
+        },
+        {
+          "title": "Autumn Leaves",
+          "album": "Portrait in Jazz",
+          "year": 1960
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "mccoy-tyner",
+      "name": "McCoy Tyner",
+      "active": "1960s–2020",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "modal",
+      "style": "모달 재즈, 포스트밥",
+      "tracks": [
+        {
+          "title": "Passion Dance",
+          "album": "The Real McCoy",
+          "year": 1967
+        },
+        {
+          "title": "Contemplation",
+          "album": "The Real McCoy",
+          "year": 1967
+        },
+        {
+          "title": "Fly with the Wind",
+          "album": "Fly with the Wind",
+          "year": 1976
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "herbie-hancock",
+      "name": "Herbie Hancock",
+      "active": "1960s–2020s",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 키보드",
+      "era": "modal",
+      "style": "모달 재즈, 포스트밥, 재즈 펑크",
+      "tracks": [
+        {
+          "title": "Maiden Voyage",
+          "album": "Maiden Voyage",
+          "year": 1965
+        },
+        {
+          "title": "Cantaloupe Island",
+          "album": "Empyrean Isles",
+          "year": 1964
+        },
+        {
+          "title": "Watermelon Man",
+          "album": "Takin' Off",
+          "year": 1962
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "wayne-shorter",
+      "name": "Wayne Shorter",
+      "active": "1950s–2023",
+      "instrument": "saxophone",
+      "instrument_detail": "테너·소프라노 색소폰",
+      "era": "modal",
+      "style": "모달 재즈, 포스트밥",
+      "tracks": [
+        {
+          "title": "Speak No Evil",
+          "album": "Speak No Evil",
+          "year": 1966
+        },
+        {
+          "title": "Footprints",
+          "album": "Adam's Apple",
+          "year": 1966
+        },
+        {
+          "title": "Juju",
+          "album": "JuJu",
+          "year": 1965
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "joe-henderson",
+      "name": "Joe Henderson",
+      "active": "1960s–2001",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "modal",
+      "style": "포스트밥",
+      "tracks": [
+        {
+          "title": "Recorda Me",
+          "album": "Page One",
+          "year": 1963
+        },
+        {
+          "title": "Inner Urge",
+          "album": "Inner Urge",
+          "year": 1966
+        },
+        {
+          "title": "Mode for Joe",
+          "album": "Mode for Joe",
+          "year": 1966
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "freddie-hubbard",
+      "name": "Freddie Hubbard",
+      "active": "1960s–2008",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "modal",
+      "style": "포스트밥, 재즈 펑크",
+      "tracks": [
+        {
+          "title": "Red Clay",
+          "album": "Red Clay",
+          "year": 1970
+        },
+        {
+          "title": "Hub-Tones",
+          "album": "Hub-Tones",
+          "year": 1963
+        },
+        {
+          "title": "Little Sunflower",
+          "album": "Backlash",
+          "year": 1967
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "elvin-jones",
+      "name": "Elvin Jones",
+      "active": "1950s–2004",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "modal",
+      "style": "모달 재즈, 폴리리듬",
+      "tracks": [
+        {
+          "title": "Pursuance",
+          "album": "A Love Supreme",
+          "year": 1965,
+          "performer": "John Coltrane"
+        },
+        {
+          "title": "Afro Blue",
+          "album": "Live at Birdland",
+          "year": 1964,
+          "performer": "John Coltrane"
+        },
+        {
+          "title": "Chasin' the Trane",
+          "album": "Live at the Village Vanguard",
+          "year": 1962,
+          "performer": "John Coltrane"
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "ron-carter",
+      "name": "Ron Carter",
+      "active": "1960s–2020s",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "modal",
+      "style": "포스트밥",
+      "tracks": [
+        {
+          "title": "Eighty-One",
+          "album": "E.S.P.",
+          "year": 1965,
+          "performer": "Miles Davis"
+        },
+        {
+          "title": "Mood",
+          "album": "E.S.P.",
+          "year": 1965,
+          "performer": "Miles Davis"
+        },
+        {
+          "title": "R.J.",
+          "album": "E.S.P.",
+          "year": 1965,
+          "performer": "Miles Davis"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "abbey-lincoln",
+      "name": "Abbey Lincoln",
+      "active": "1950s–2010",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "modal",
+      "style": "재즈 보컬, 포스트밥",
+      "tracks": [
+        {
+          "title": "Driva' Man",
+          "album": "We Insist!",
+          "year": 1960,
+          "performer": "Max Roach"
+        },
+        {
+          "title": "Straight Ahead",
+          "album": "Straight Ahead",
+          "year": 1961
+        },
+        {
+          "title": "Blue Monk",
+          "album": "Straight Ahead",
+          "year": 1961
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "charles-lloyd",
+      "name": "Charles Lloyd",
+      "active": "1960s–2020s",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰, 플루트",
+      "era": "modal",
+      "style": "모달 재즈, 스피리추얼 재즈",
+      "tracks": [
+        {
+          "title": "Forest Flower: Sunrise",
+          "album": "Forest Flower",
+          "year": 1967
+        },
+        {
+          "title": "Forest Flower: Sunset",
+          "album": "Forest Flower",
+          "year": 1967
+        },
+        {
+          "title": "Sombrero Sam",
+          "album": "Forest Flower",
+          "year": 1967
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "ornette-coleman",
+      "name": "Ornette Coleman",
+      "active": "1950s–2015",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰",
+      "era": "free",
+      "style": "프리 재즈, 하모롤로디",
+      "tracks": [
+        {
+          "title": "Lonely Woman",
+          "album": "The Shape of Jazz to Come",
+          "year": 1959
+        },
+        {
+          "title": "Peace",
+          "album": "The Shape of Jazz to Come",
+          "year": 1959
+        },
+        {
+          "title": "Ramblin'",
+          "album": "Change of the Century",
+          "year": 1960
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "eric-dolphy",
+      "name": "Eric Dolphy",
+      "active": "1950s–1964",
+      "instrument": "saxophone",
+      "instrument_detail": "알토 색소폰, 베이스 클라리넷, 플루트",
+      "era": "free",
+      "style": "아방가르드, 포스트밥",
+      "tracks": [
+        {
+          "title": "Hat and Beard",
+          "album": "Out to Lunch!",
+          "year": 1964
+        },
+        {
+          "title": "Gazzelloni",
+          "album": "Out to Lunch!",
+          "year": 1964
+        },
+        {
+          "title": "Something Sweet, Something Tender",
+          "album": "Out to Lunch!",
+          "year": 1964
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "cecil-taylor",
+      "name": "Cecil Taylor",
+      "active": "1950s–2018",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "free",
+      "style": "프리 재즈",
+      "tracks": [
+        {
+          "title": "Conquistador",
+          "album": "Conquistador!",
+          "year": 1966
+        },
+        {
+          "title": "Enter, Evening",
+          "album": "Unit Structures",
+          "year": 1966
+        },
+        {
+          "title": "Unit Structure/As of a Now/Section",
+          "album": "Unit Structures",
+          "year": 1966
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "albert-ayler",
+      "name": "Albert Ayler",
+      "active": "1960s–1970",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "free",
+      "style": "프리 재즈",
+      "tracks": [
+        {
+          "title": "Ghosts: First Variation",
+          "album": "Spiritual Unity",
+          "year": 1965
+        },
+        {
+          "title": "Spirits",
+          "album": "Spiritual Unity",
+          "year": 1965
+        },
+        {
+          "title": "Bells",
+          "album": "Bells",
+          "year": 1965
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "don-cherry",
+      "name": "Don Cherry",
+      "active": "1950s–1995",
+      "instrument": "trumpet",
+      "instrument_detail": "포켓 트럼펫",
+      "era": "free",
+      "style": "프리 재즈, 월드 퓨전",
+      "tracks": [
+        {
+          "title": "Complete Communion",
+          "album": "Complete Communion",
+          "year": 1966
+        },
+        {
+          "title": "Symphony for Improvisers",
+          "album": "Symphony for Improvisers",
+          "year": 1967
+        },
+        {
+          "title": "Brown Rice",
+          "album": "Brown Rice",
+          "year": 1975
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "charlie-haden",
+      "name": "Charlie Haden",
+      "active": "1950s–2014",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "free",
+      "style": "프리 재즈, 서정적 재즈",
+      "tracks": [
+        {
+          "title": "Lonely Woman",
+          "album": "The Shape of Jazz to Come",
+          "year": 1959,
+          "performer": "Ornette Coleman"
+        },
+        {
+          "title": "Our Spanish Love Song",
+          "album": "Beyond the Missouri Sky",
+          "year": 1997,
+          "performer": "Charlie Haden & Pat Metheny"
+        },
+        {
+          "title": "Song for Che",
+          "album": "Liberation Music Orchestra",
+          "year": 1970
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "sun-ra",
+      "name": "Sun Ra",
+      "active": "1950s–1993",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 신시사이저, 밴드리더",
+      "era": "free",
+      "style": "아프로퓨처리즘, 프리 재즈",
+      "tracks": [
+        {
+          "title": "Space Is the Place",
+          "album": "Space Is the Place",
+          "year": 1973
+        },
+        {
+          "title": "Enlightenment",
+          "album": "Jazz in Silhouette",
+          "year": 1959
+        },
+        {
+          "title": "Rocket Number Nine Take Off for the Planet Venus",
+          "album": "Interstellar Low Ways",
+          "year": 1966
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "pharoah-sanders",
+      "name": "Pharoah Sanders",
+      "active": "1960s–2022",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "free",
+      "style": "스피리추얼 재즈, 프리 재즈",
+      "tracks": [
+        {
+          "title": "The Creator Has a Master Plan",
+          "album": "Karma",
+          "year": 1969
+        },
+        {
+          "title": "Astral Traveling",
+          "album": "Thembi",
+          "year": 1971
+        },
+        {
+          "title": "Love Is Everywhere",
+          "album": "Love in Us All",
+          "year": 1974
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "rashied-ali",
+      "name": "Rashied Ali",
+      "active": "1960s–2009",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "free",
+      "style": "프리 재즈",
+      "tracks": [
+        {
+          "title": "Mars",
+          "album": "Interstellar Space",
+          "year": 1974,
+          "performer": "John Coltrane & Rashied Ali"
+        },
+        {
+          "title": "Venus",
+          "album": "Interstellar Space",
+          "year": 1974,
+          "performer": "John Coltrane & Rashied Ali"
+        },
+        {
+          "title": "Jupiter",
+          "album": "Interstellar Space",
+          "year": 1974,
+          "performer": "John Coltrane & Rashied Ali"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "leon-thomas",
+      "name": "Leon Thomas",
+      "active": "1960s–1999",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "free",
+      "style": "스피리추얼 재즈, 요들 스캣",
+      "tracks": [
+        {
+          "title": "The Creator Has a Master Plan",
+          "album": "Karma",
+          "year": 1969,
+          "performer": "Pharoah Sanders"
+        },
+        {
+          "title": "Echoes",
+          "album": "Spirits Known and Unknown",
+          "year": 1969
+        },
+        {
+          "title": "Song for My Father",
+          "album": "Spirits Known and Unknown",
+          "year": 1969
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "sonny-sharrock",
+      "name": "Sonny Sharrock",
+      "active": "1960s–1994",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "free",
+      "style": "프리 재즈, 노이즈",
+      "tracks": [
+        {
+          "title": "Promises Kept",
+          "album": "Ask the Ages",
+          "year": 1991
+        },
+        {
+          "title": "Many Mansions",
+          "album": "Ask the Ages",
+          "year": 1991
+        },
+        {
+          "title": "Black Woman",
+          "album": "Black Woman",
+          "year": 1969
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "alice-coltrane",
+      "name": "Alice Coltrane",
+      "active": "1960s–2007",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 하프, 오르간",
+      "era": "free",
+      "style": "스피리추얼 재즈",
+      "tracks": [
+        {
+          "title": "Journey in Satchidananda",
+          "album": "Journey in Satchidananda",
+          "year": 1971
+        },
+        {
+          "title": "Turiya and Ramakrishna",
+          "album": "Ptah, the El Daoud",
+          "year": 1970
+        },
+        {
+          "title": "Blue Nile",
+          "album": "Ptah, the El Daoud",
+          "year": 1970
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "joe-zawinul",
+      "name": "Joe Zawinul",
+      "active": "1950s–2007",
+      "instrument": "piano",
+      "instrument_detail": "키보드, 신시사이저",
+      "era": "fusion",
+      "style": "재즈 퓨전",
+      "tracks": [
+        {
+          "title": "Birdland",
+          "album": "Heavy Weather",
+          "year": 1977,
+          "performer": "Weather Report"
+        },
+        {
+          "title": "A Remark You Made",
+          "album": "Heavy Weather",
+          "year": 1977,
+          "performer": "Weather Report"
+        },
+        {
+          "title": "In a Silent Way",
+          "album": "In a Silent Way",
+          "year": 1969,
+          "performer": "Miles Davis"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "jaco-pastorius",
+      "name": "Jaco Pastorius",
+      "active": "1970s–1987",
+      "instrument": "bass",
+      "instrument_detail": "프렛리스 베이스",
+      "era": "fusion",
+      "style": "재즈 퓨전",
+      "tracks": [
+        {
+          "title": "Donna Lee",
+          "album": "Jaco Pastorius",
+          "year": 1976
+        },
+        {
+          "title": "Portrait of Tracy",
+          "album": "Jaco Pastorius",
+          "year": 1976
+        },
+        {
+          "title": "Teen Town",
+          "album": "Heavy Weather",
+          "year": 1977,
+          "performer": "Weather Report"
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "chick-corea",
+      "name": "Chick Corea",
+      "active": "1960s–2021",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 키보드",
+      "era": "fusion",
+      "style": "재즈 퓨전, 라틴 재즈",
+      "tracks": [
+        {
+          "title": "Spain",
+          "album": "Light as a Feather",
+          "year": 1973,
+          "performer": "Return to Forever"
+        },
+        {
+          "title": "500 Miles High",
+          "album": "Light as a Feather",
+          "year": 1973,
+          "performer": "Return to Forever"
+        },
+        {
+          "title": "Now He Sings, Now He Sobs",
+          "album": "Now He Sings, Now He Sobs",
+          "year": 1968
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "john-mclaughlin",
+      "name": "John McLaughlin",
+      "active": "1960s–2020s",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "fusion",
+      "style": "재즈 록 퓨전",
+      "tracks": [
+        {
+          "title": "Meeting of the Spirits",
+          "album": "The Inner Mounting Flame",
+          "year": 1971,
+          "performer": "Mahavishnu Orchestra"
+        },
+        {
+          "title": "Birds of Fire",
+          "album": "Birds of Fire",
+          "year": 1973,
+          "performer": "Mahavishnu Orchestra"
+        },
+        {
+          "title": "Dance of Maya",
+          "album": "The Inner Mounting Flame",
+          "year": 1971,
+          "performer": "Mahavishnu Orchestra"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "pat-metheny",
+      "name": "Pat Metheny",
+      "active": "1970s–2020s",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "fusion",
+      "style": "재즈 퓨전, 컨템퍼러리",
+      "tracks": [
+        {
+          "title": "Bright Size Life",
+          "album": "Bright Size Life",
+          "year": 1976
+        },
+        {
+          "title": "Phase Dance",
+          "album": "Pat Metheny Group",
+          "year": 1978,
+          "performer": "Pat Metheny Group"
+        },
+        {
+          "title": "Last Train Home",
+          "album": "Still Life (Talking)",
+          "year": 1987,
+          "performer": "Pat Metheny Group"
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "billy-cobham",
+      "name": "Billy Cobham",
+      "active": "1960s–2020s",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "fusion",
+      "style": "재즈 록 퓨전",
+      "tracks": [
+        {
+          "title": "Stratus",
+          "album": "Spectrum",
+          "year": 1973
+        },
+        {
+          "title": "Quadrant 4",
+          "album": "Spectrum",
+          "year": 1973
+        },
+        {
+          "title": "Red Baron",
+          "album": "Spectrum",
+          "year": 1973
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "tony-williams",
+      "name": "Tony Williams",
+      "active": "1960s–1997",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "fusion",
+      "style": "재즈 록 퓨전, 포스트밥",
+      "tracks": [
+        {
+          "title": "Emergency!",
+          "album": "Emergency!",
+          "year": 1969,
+          "performer": "The Tony Williams Lifetime"
+        },
+        {
+          "title": "Vashkar",
+          "album": "Emergency!",
+          "year": 1969,
+          "performer": "The Tony Williams Lifetime"
+        },
+        {
+          "title": "Snake Oil",
+          "album": "Believe It",
+          "year": 1975,
+          "performer": "The New Tony Williams Lifetime"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "stanley-clarke",
+      "name": "Stanley Clarke",
+      "active": "1970s–2020s",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "fusion",
+      "style": "재즈 퓨전",
+      "tracks": [
+        {
+          "title": "School Days",
+          "album": "School Days",
+          "year": 1976
+        },
+        {
+          "title": "Lopsy Lu",
+          "album": "Stanley Clarke",
+          "year": 1974
+        },
+        {
+          "title": "Silly Putty",
+          "album": "Journey to Love",
+          "year": 1975
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "michael-brecker",
+      "name": "Michael Brecker",
+      "active": "1970s–2007",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "fusion",
+      "style": "재즈 퓨전, 포스트밥",
+      "tracks": [
+        {
+          "title": "Some Skunk Funk",
+          "album": "The Brecker Bros.",
+          "year": 1975,
+          "performer": "The Brecker Brothers"
+        },
+        {
+          "title": "Itsbynne Reel",
+          "album": "Don't Try This at Home",
+          "year": 1988
+        },
+        {
+          "title": "Song for Bilbao",
+          "album": "Tales from the Hudson",
+          "year": 1996
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "chuck-mangione",
+      "name": "Chuck Mangione",
+      "active": "1960s–2010s",
+      "instrument": "trumpet",
+      "instrument_detail": "플루겔호른, 트럼펫",
+      "era": "fusion",
+      "style": "재즈 퓨전, 스무드 재즈",
+      "tracks": [
+        {
+          "title": "Feels So Good",
+          "album": "Feels So Good",
+          "year": 1977
+        },
+        {
+          "title": "Children of Sanchez",
+          "album": "Children of Sanchez",
+          "year": 1978
+        },
+        {
+          "title": "Bellavia",
+          "album": "Bellavia",
+          "year": 1975
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "al-jarreau",
+      "name": "Al Jarreau",
+      "active": "1960s–2017",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "fusion",
+      "style": "재즈 퓨전 보컬, R&B",
+      "tracks": [
+        {
+          "title": "Spain (I Can Recall)",
+          "album": "This Time",
+          "year": 1980
+        },
+        {
+          "title": "Take Five",
+          "album": "Look to the Rainbow",
+          "year": 1977
+        },
+        {
+          "title": "We're in This Love Together",
+          "album": "Breakin' Away",
+          "year": 1981
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "george-benson",
+      "name": "George Benson",
+      "active": "1960s–2020s",
+      "instrument": "guitar",
+      "instrument_detail": "기타, 보컬",
+      "era": "fusion",
+      "style": "재즈 퓨전, 소울 재즈",
+      "tracks": [
+        {
+          "title": "Breezin'",
+          "album": "Breezin'",
+          "year": 1976
+        },
+        {
+          "title": "This Masquerade",
+          "album": "Breezin'",
+          "year": 1976
+        },
+        {
+          "title": "On Broadway",
+          "album": "Weekend in L.A.",
+          "year": 1978
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "grover-washington-jr",
+      "name": "Grover Washington Jr.",
+      "active": "1970s–1999",
+      "instrument": "saxophone",
+      "instrument_detail": "색소폰",
+      "era": "fusion",
+      "style": "재즈 펑크, 스무드 재즈",
+      "tracks": [
+        {
+          "title": "Mister Magic",
+          "album": "Mister Magic",
+          "year": 1975
+        },
+        {
+          "title": "Winelight",
+          "album": "Winelight",
+          "year": 1980
+        },
+        {
+          "title": "Just the Two of Us",
+          "album": "Winelight",
+          "year": 1980
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "wynton-marsalis",
+      "name": "Wynton Marsalis",
+      "active": "1980s–2020s",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫",
+      "era": "contemporary",
+      "style": "네오 트래디셔널, 포스트밥",
+      "tracks": [
+        {
+          "title": "Black Codes (From the Underground)",
+          "album": "Black Codes (From the Underground)",
+          "year": 1985
+        },
+        {
+          "title": "Delfeayo's Dilemma",
+          "album": "Black Codes (From the Underground)",
+          "year": 1985
+        },
+        {
+          "title": "Cherokee",
+          "album": "Marsalis Standard Time, Vol. 1",
+          "year": 1987
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "roy-hargrove",
+      "name": "Roy Hargrove",
+      "active": "1990s–2018",
+      "instrument": "trumpet",
+      "instrument_detail": "트럼펫, 플루겔호른",
+      "era": "contemporary",
+      "style": "포스트밥, 네오소울 재즈",
+      "tracks": [
+        {
+          "title": "Strasbourg / St. Denis",
+          "album": "Earfood",
+          "year": 2008
+        },
+        {
+          "title": "Mambo for Roy",
+          "album": "Habana",
+          "year": 1997,
+          "performer": "Roy Hargrove's Crisol"
+        },
+        {
+          "title": "Public Eye",
+          "album": "Public Eye",
+          "year": 1991
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "brad-mehldau",
+      "name": "Brad Mehldau",
+      "active": "1990s–2020s",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "contemporary",
+      "style": "컨템퍼러리 피아노 트리오",
+      "tracks": [
+        {
+          "title": "Exit Music (For a Film)",
+          "album": "Songs: The Art of the Trio, Vol. 3",
+          "year": 1998
+        },
+        {
+          "title": "Day Is Done",
+          "album": "Day Is Done",
+          "year": 2005
+        },
+        {
+          "title": "Knives Out",
+          "album": "Day Is Done",
+          "year": 2005
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "keith-jarrett",
+      "name": "Keith Jarrett",
+      "active": "1960s–2017",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "contemporary",
+      "style": "즉흥 솔로 피아노, ECM",
+      "tracks": [
+        {
+          "title": "The Köln Concert, Part I",
+          "album": "The Köln Concert",
+          "year": 1975
+        },
+        {
+          "title": "My Song",
+          "album": "My Song",
+          "year": 1978
+        },
+        {
+          "title": "Country",
+          "album": "My Song",
+          "year": 1978
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "hiromi",
+      "name": "Hiromi",
+      "active": "2000s–2020s",
+      "instrument": "piano",
+      "instrument_detail": "피아노",
+      "era": "contemporary",
+      "style": "컨템퍼러리 재즈, 퓨전",
+      "tracks": [
+        {
+          "title": "XYZ",
+          "album": "Another Mind",
+          "year": 2003
+        },
+        {
+          "title": "Spiral",
+          "album": "Spiral",
+          "year": 2006
+        },
+        {
+          "title": "Place to Be",
+          "album": "Place to Be",
+          "year": 2009
+        }
+      ],
+      "starter": 2
+    },
+    {
+      "id": "robert-glasper",
+      "name": "Robert Glasper",
+      "active": "2000s–2020s",
+      "instrument": "piano",
+      "instrument_detail": "피아노, 키보드",
+      "era": "contemporary",
+      "style": "재즈 힙합, 네오소울",
+      "tracks": [
+        {
+          "title": "Afro Blue",
+          "album": "Black Radio",
+          "year": 2012,
+          "performer": "Robert Glasper Experiment"
+        },
+        {
+          "title": "Cherish the Day",
+          "album": "Black Radio",
+          "year": 2012,
+          "performer": "Robert Glasper Experiment"
+        },
+        {
+          "title": "J Dillalude",
+          "album": "In My Element",
+          "year": 2007
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "esperanza-spalding",
+      "name": "Esperanza Spalding",
+      "active": "2000s–2020s",
+      "instrument": "bass",
+      "instrument_detail": "베이스, 보컬",
+      "era": "contemporary",
+      "style": "컨템퍼러리 재즈",
+      "tracks": [
+        {
+          "title": "I Know You Know",
+          "album": "Esperanza",
+          "year": 2008
+        },
+        {
+          "title": "Little Fly",
+          "album": "Chamber Music Society",
+          "year": 2010
+        },
+        {
+          "title": "Black Gold",
+          "album": "Radio Music Society",
+          "year": 2012
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "avishai-cohen",
+      "name": "Avishai Cohen",
+      "active": "1990s–2020s",
+      "instrument": "bass",
+      "instrument_detail": "베이스",
+      "era": "contemporary",
+      "style": "컨템퍼러리 재즈, 중동 음악 융합",
+      "tracks": [
+        {
+          "title": "Seven Seas",
+          "album": "Seven Seas",
+          "year": 2011
+        },
+        {
+          "title": "Gently Disturbed",
+          "album": "Gently Disturbed",
+          "year": 2008
+        },
+        {
+          "title": "Remembering",
+          "album": "Gently Disturbed",
+          "year": 2008
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "kamasi-washington",
+      "name": "Kamasi Washington",
+      "active": "2000s–2020s",
+      "instrument": "saxophone",
+      "instrument_detail": "테너 색소폰",
+      "era": "contemporary",
+      "style": "스피리추얼 재즈, LA 신",
+      "tracks": [
+        {
+          "title": "Change of the Guard",
+          "album": "The Epic",
+          "year": 2015
+        },
+        {
+          "title": "Truth",
+          "album": "Harmony of Difference",
+          "year": 2017
+        },
+        {
+          "title": "Fists of Fury",
+          "album": "Heaven and Earth",
+          "year": 2018
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "diana-krall",
+      "name": "Diana Krall",
+      "active": "1990s–2020s",
+      "instrument": "vocal",
+      "instrument_detail": "보컬, 피아노",
+      "era": "contemporary",
+      "style": "재즈 보컬",
+      "tracks": [
+        {
+          "title": "The Look of Love",
+          "album": "The Look of Love",
+          "year": 2001
+        },
+        {
+          "title": "Peel Me a Grape",
+          "album": "Love Scenes",
+          "year": 1997
+        },
+        {
+          "title": "Temptation",
+          "album": "The Girl in the Other Room",
+          "year": 2004
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "cassandra-wilson",
+      "name": "Cassandra Wilson",
+      "active": "1980s–2020s",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "contemporary",
+      "style": "컨템퍼러리 재즈 보컬, 블루스",
+      "tracks": [
+        {
+          "title": "Tupelo Honey",
+          "album": "Blue Light 'til Dawn",
+          "year": 1993
+        },
+        {
+          "title": "You Don't Know What Love Is",
+          "album": "Blue Light 'til Dawn",
+          "year": 1993
+        },
+        {
+          "title": "Strange Fruit",
+          "album": "New Moon Daughter",
+          "year": 1995
+        }
+      ],
+      "starter": 1
+    },
+    {
+      "id": "gregory-porter",
+      "name": "Gregory Porter",
+      "active": "2010s–2020s",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "contemporary",
+      "style": "재즈 보컬, 소울",
+      "tracks": [
+        {
+          "title": "Liquid Spirit",
+          "album": "Liquid Spirit",
+          "year": 2013
+        },
+        {
+          "title": "Hey Laura",
+          "album": "Liquid Spirit",
+          "year": 2013
+        },
+        {
+          "title": "1960 What?",
+          "album": "Water",
+          "year": 2010
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "cecile-mclorin-salvant",
+      "name": "Cécile McLorin Salvant",
+      "active": "2010s–2020s",
+      "instrument": "vocal",
+      "instrument_detail": "보컬",
+      "era": "contemporary",
+      "style": "재즈 보컬",
+      "tracks": [
+        {
+          "title": "Wives and Lovers",
+          "album": "WomanChild",
+          "year": 2013
+        },
+        {
+          "title": "Something's Coming",
+          "album": "The Window",
+          "year": 2018
+        },
+        {
+          "title": "Ghost Song",
+          "album": "Ghost Song",
+          "year": 2022
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "brian-blade",
+      "name": "Brian Blade",
+      "active": "1990s–2020s",
+      "instrument": "drums",
+      "instrument_detail": "드럼",
+      "era": "contemporary",
+      "style": "컨템퍼러리 재즈",
+      "tracks": [
+        {
+          "title": "Landmarks",
+          "album": "Landmarks",
+          "year": 2014,
+          "performer": "Brian Blade & The Fellowship Band"
+        },
+        {
+          "title": "Season of Changes",
+          "album": "Season of Changes",
+          "year": 2008,
+          "performer": "Brian Blade & The Fellowship Band"
+        },
+        {
+          "title": "Perceptual",
+          "album": "Perceptual",
+          "year": 2000,
+          "performer": "Brian Blade Fellowship"
+        }
+      ],
+      "starter": 0
+    },
+    {
+      "id": "bill-frisell",
+      "name": "Bill Frisell",
+      "active": "1980s–2020s",
+      "instrument": "guitar",
+      "instrument_detail": "기타",
+      "era": "contemporary",
+      "style": "아메리카나 재즈, 컨템퍼러리",
+      "tracks": [
+        {
+          "title": "Gone, Just Like a Train",
+          "album": "Gone, Just Like a Train",
+          "year": 1998
+        },
+        {
+          "title": "Shenandoah",
+          "album": "Good Dog, Happy Man",
+          "year": 1999
+        },
+        {
+          "title": "Throughout",
+          "album": "In Line",
+          "year": 1983
+        }
+      ],
+      "starter": 0
+    }
+  ]
+}

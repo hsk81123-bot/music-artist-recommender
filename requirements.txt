@@ -1,0 +1,5 @@
+anthropic>=1.13.0,<2
+ytmusicapi>=1.12.3
+requests>=2.31
+python-dotenv>=1.0
+tzdata; sys_platform == "win32"
