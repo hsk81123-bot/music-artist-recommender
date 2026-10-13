@@ -1,3 +1,47 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "date": "2026-10-13",
+      "kind": "daily",
+      "artist_id": "wes-montgomery",
+      "artist": {
+        "name": "Wes Montgomery",
+        "active": "1950s–1968",
+        "instrument_detail": "기타",
+        "era": "hardbop",
+        "era_ko": "하드밥",
+        "style": "하드밥, 소울 재즈"
+      },
+      "intro": "Wes Montgomery은(는) 하드밥 시대를 대표하는 기타 아티스트로, 하드밥, 소울 재즈 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Four on Six",
+          "album": "The Incredible Jazz Guitar of Wes Montgomery",
+          "year": 1960,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=9PD2Q7TXmvU"
+        },
+        {
+          "title": "West Coast Blues",
+          "album": "The Incredible Jazz Guitar of Wes Montgomery",
+          "year": 1960,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=Lvf2e6hm9lU"
+        },
+        {
+          "title": "Bumpin' on Sunset",
+          "album": "Tequila",
+          "year": 1966,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=s0lCzYLFT4U"
+        }
+      ],
+      "starter": {
+        "index": 0,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "generated_by": "template",
+      "cycle": 1
+    }
+  ]
 }
