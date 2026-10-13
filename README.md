@@ -299,6 +299,12 @@ journalctl -u daily-jazz-bot -f    # 로그 확인
 
 ---
 
+## 🧩 다른 주제로 봇 만들기
+
+같은 구조로 뉴스 봇 등을 만들려면 [`templates/daily-news-bot-prompt.md`](templates/daily-news-bot-prompt.md)의 프롬프트를 새 Claude Code 세션에 붙여 넣으세요.
+
+---
+
 ## 🔐 보안 메모
 - 모든 키는 `.env`(로컬)나 GitHub Secrets에서만 읽고, 코드에는 하드코딩하지 않습니다.
 - 텔레그램 네트워크 오류 로그에는 토큰이 들어간 URL을 남기지 않습니다.
