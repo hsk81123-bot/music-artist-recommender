@@ -42,6 +42,61 @@
       },
       "generated_by": "template",
       "cycle": 1
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "daily",
+      "artist_id": "miles-davis",
+      "artist": {
+        "name": "Miles Davis",
+        "active": "1940s–1991",
+        "instrument_detail": "트럼펫",
+        "era": "modal",
+        "era_ko": "모달 재즈",
+        "style": "모달 재즈 (쿨·하드밥·퓨전 전반)"
+      },
+      "intro": "Miles Davis은(는) 모달 재즈 시대를 대표하는 트럼펫 아티스트로, 모달 재즈 (쿨·하드밥·퓨전 전반) 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "So What",
+          "album": "Kind of Blue",
+          "year": 1959,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=KJEzFvXx3Xw"
+        },
+        {
+          "title": "Blue in Green",
+          "album": "Kind of Blue",
+          "year": 1959,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=w1Ipwm-Uy5s"
+        },
+        {
+          "title": "'Round Midnight",
+          "album": "'Round About Midnight",
+          "year": 1957,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=7r77GLcGlvQ"
+        }
+      ],
+      "starter": {
+        "index": 0,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "1959년 Kind of Blue 녹음 날, 멤버들은 간단한 스케치만 받아 거의 리허설 없이 연주했고 대부분의 곡이 첫 테이크로 완성됐습니다. 이 앨범은 지금도 가장 많이 팔린 재즈 앨범 중 하나입니다.",
+        "link": {
+          "title": "Kind of Blue",
+          "url": "https://ko.wikipedia.org/wiki/Kind_of_Blue",
+          "lang": "ko"
+        }
+      },
+      "wiki": {
+        "ko": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%BC%EC%8A%A4_%EB%8D%B0%EC%9D%B4%EB%B9%84%EC%8A%A4",
+        "en": "https://en.wikipedia.org/wiki/Miles_Davis"
+      },
+      "generated_by": "template",
+      "cycle": 1
     }
   ]
 }
