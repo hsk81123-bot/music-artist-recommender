@@ -1,6 +1,6 @@
 # 🎷 Daily Jazz — 매일 아침 재즈 아티스트 한 명을 소개하는 텔레그램 봇
 
-매일 오전 8시(KST)에 재즈 아티스트 한 명을 골라 **소개 · 대표곡 3곡 · YouTube Music 링크**를 텔레그램으로 보내 줍니다.
+매일 오전 7시(KST) 무렵에 재즈 아티스트 한 명을 골라 **소개 · 대표곡 3곡 · YouTube Music 링크**를 텔레그램으로 보내 줍니다.
 
 - **111명**의 큐레이션 목록: 시대 8개(스윙, 비밥, 쿨, 하드밥, 모달, 프리, 퓨전, 현대 재즈) × 악기 7개(색소폰, 트럼펫, 피아노, 보컬, 베이스, 드럼, 기타)
 - 목록을 다 돌기 전까지는 같은 아티스트가 다시 나오지 않고, 시대나 악기가 전날과 겹치지 않게 고릅니다.
@@ -37,7 +37,7 @@
 ├── examples/sample_entry.json   # 메시지 예시에 쓴 데이터
 ├── tests/test_jazzbot.py
 ├── .github/workflows/
-│   ├── daily-jazz.yml    # 매일 08:00 KST 발송
+│   ├── daily-jazz.yml    # 매일 07:00 KST 무렵 발송
 │   ├── bot-commands.yml  # 30분마다 쌓인 봇 명령 처리
 │   ├── verify-data.yml   # 큐레이션의 위키백과 제목 검증
 │   └── tests.yml
@@ -154,7 +154,7 @@ pip install -r requirements-dev.txt && pytest -q   # 단위 테스트
    같은 화면의 **Variables** 탭에는 필요할 때만 `YTMUSIC_PLAYLIST_ID`, `TELEGRAM_ALLOWED_CHAT_IDS`를 등록합니다.
 3. **Settings → Actions → General → Workflow permissions**를 **Read and write permissions**로 설정합니다. 워크플로가 `data/history.json`을 커밋해야 하기 때문입니다.
 4. **Actions 탭 → Daily Jazz → Run workflow**로 한 번 수동 실행해서 메시지가 오는지 확인합니다.
-5. 이후에는 매일 `0 23 * * *`(UTC), 즉 **08:00 KST**에 자동으로 실행됩니다.
+5. 이후에는 매일 `50 21 * * *`(UTC), 즉 **06:50 KST**에 실행이 예약됩니다. GitHub cron이 보통 몇 분 늦게 시작하므로 7시 전후에 도착합니다. 시각을 바꾸려면 `.github/workflows/daily-jazz.yml`의 cron 값을 UTC 기준으로 고치세요(KST − 9시간).
 
 알아 두면 좋은 점:
 - GitHub cron은 부하에 따라 **수 분~수십 분 늦게** 시작될 수 있습니다. 정각 발송이 꼭 필요하면 아래의 서버 cron을 쓰세요.
@@ -169,9 +169,9 @@ GitHub Actions 대신 직접 실행하는 경우입니다. 두 방식을 함께 
 **Linux / macOS crontab** (`crontab -e`)
 ```cron
 CRON_TZ=Asia/Seoul
-0 8 * * * cd /home/me/music-artist-recommender && .venv/bin/python -m jazzbot.daily >> daily.log 2>&1
+0 7 * * * cd /home/me/music-artist-recommender && .venv/bin/python -m jazzbot.daily >> daily.log 2>&1
 ```
-> `CRON_TZ`를 지원하지 않는 cron(macOS 등)에서는 서버 시간대 기준으로 시각을 적으세요. 서버가 UTC라면 `0 23 * * *`입니다.
+> `CRON_TZ`를 지원하지 않는 cron(macOS 등)에서는 서버 시간대 기준으로 시각을 적으세요. 서버가 UTC라면 `0 22 * * *`입니다.
 
 **봇 명령어 상시 실행 (systemd)**: `/etc/systemd/system/daily-jazz-bot.service`
 ```ini
