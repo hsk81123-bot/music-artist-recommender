@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 from .artists import ERA_KO, choose_next, load_artists
 from .config import Settings
 from .history import History
+from .wiki import safe_resolve
 from .writer import DescriptionWriter
 from .youtube import PlaylistManager, TrackLinker, video_id_from_url
 
@@ -55,6 +56,10 @@ class JazzService:
         for track, point in zip(artist["tracks"], desc["track_points"]):
             url = self.linker.find(artist, track)
             tracks.append({**track, "point": point, "url": url})
+        story_title, wiki_title = artist["story"]["wiki"], artist["wiki"]
+        wiki = safe_resolve([wiki_title, story_title])
+        artist_wiki = wiki.get(wiki_title)
+        story_wiki = wiki.get(story_title) or artist_wiki  # 관련 문서가 없으면 아티스트 문서로
         entry = {
             "date": date,
             "kind": kind,
@@ -70,6 +75,8 @@ class JazzService:
             "intro": desc["intro"],
             "tracks": tracks,
             "starter": {"index": artist["starter"], "reason": desc["starter_reason"]},
+            "story": {"text": artist["story"]["text"], "link": _pick_link(story_wiki)},
+            "wiki": {"ko": artist_wiki["ko_url"], "en": artist_wiki["en_url"]} if artist_wiki else None,
             "generated_by": desc.get("generated_by"),
         }
         if cycle is not None:
@@ -89,3 +96,12 @@ class JazzService:
             entry["playlist_url"] = f"https://music.youtube.com/playlist?list={pm.ensure_playlist()}"
         except Exception as exc:  # 선택 기능이므로 실패해도 발송은 계속
             log.error("플레이리스트 추가 실패(무시하고 계속): %s", exc)
+
+
+def _pick_link(page: dict | None) -> dict | None:
+    """한국어 문서가 있으면 한국어판, 없으면 영문판 링크."""
+    if not page:
+        return None
+    if page["ko_url"]:
+        return {"title": page["ko_title"], "url": page["ko_url"], "lang": "ko"}
+    return {"title": page["en_title"], "url": page["en_url"], "lang": "en"}

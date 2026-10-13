@@ -35,6 +35,8 @@ def load_artists(path: Path) -> list[dict]:
             raise ValueError(f"알 수 없는 era/instrument: {a['id']}")
         if len(a["tracks"]) != 3 or not 0 <= a["starter"] < 3:
             raise ValueError(f"대표곡은 3곡, starter는 0~2여야 합니다: {a['id']}")
+        if not a.get("wiki") or not a.get("story", {}).get("text") or not a["story"].get("wiki"):
+            raise ValueError(f"wiki와 story(text, wiki)가 필요합니다: {a['id']}")
     return artists
 
 

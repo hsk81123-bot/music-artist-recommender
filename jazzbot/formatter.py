@@ -32,8 +32,16 @@ def render(entry: dict) -> tuple[str, list[list[dict]]]:
         "",
         escape(entry["intro"]),
         "",
-        "🎧 <b>대표곡</b>",
     ]
+    story = entry.get("story")
+    if story:
+        lines += ["📖 <b>흥미로운 이야기</b>", escape(story["text"])]
+        link = story.get("link")
+        if link:
+            lang = "위키백과" if link.get("lang") == "ko" else "Wikipedia"
+            lines.append(f"🔗 <a href=\"{_escape(link['url'])}\">{lang}: {escape(link['title'])}</a>")
+        lines.append("")
+    lines.append("🎧 <b>대표곡</b>")
     buttons: list[list[dict]] = []
     for i, t in enumerate(entry["tracks"]):
         n = NUM[i]
@@ -58,6 +66,14 @@ def render(entry: dict) -> tuple[str, list[list[dict]]]:
         f"🔰 <b>이 곡부터 들어보세요:</b> {escape(starter_track['title'])}",
         escape(s["reason"]),
     ]
+    wiki = entry.get("wiki")
+    if wiki:
+        links = []
+        if wiki.get("ko"):
+            links.append(f"<a href=\"{_escape(wiki['ko'])}\">한국어</a>")
+        links.append(f"<a href=\"{_escape(wiki['en'])}\">English</a>")
+        lines += ["", "📚 아티스트 위키백과: " + " · ".join(links)]
+        buttons.append([{"text": "📚 위키백과에서 더 알아보기", "url": wiki.get("ko") or wiki["en"]}])
     if entry.get("playlist_url"):
         lines += ["", f"📂 <a href=\"{_escape(entry['playlist_url'])}\">Daily Jazz 플레이리스트</a>"]
     text = "\n".join(lines)
