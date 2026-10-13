@@ -150,3 +150,21 @@ def test_bot_commands(service, tmp_path):
     assert "랜덤 재즈 아티스트" in tg.sent[2][1]
     assert service.history.entries[-1]["kind"] == "random"
     assert "아직 발송 기록이 없어요" in tg.sent[3][1]  # random은 history 목록에 안 나옴
+
+
+def test_bot_ignores_everyone_without_allowed_chats(service, tmp_path):
+    tg = FakeTG()
+    bot = Bot(service, tg)
+    bot.allowed = frozenset()
+    bot.process([{"update_id": 1, "message": {"chat": {"id": 5}, "text": "/random"}}], tmp_path / "s.json")
+    assert tg.sent == []
+
+
+def test_bot_main_skips_polling_without_chat_id(monkeypatch):
+    from jazzbot import bot as botmod
+
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "123:abc")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "")
+    monkeypatch.setenv("TELEGRAM_ALLOWED_CHAT_IDS", "")
+    monkeypatch.setattr(botmod, "TelegramClient", lambda *a: pytest.fail("getUpdates를 호출하면 안 됨"))
+    assert botmod.main(["--once"]) == 0

@@ -54,8 +54,10 @@ class Bot:
         chat_id = str(msg.get("chat", {}).get("id", ""))
         if not text.startswith("/") or not chat_id:
             return
-        if self.allowed and chat_id not in self.allowed:
-            log.warning("허용되지 않은 chat %s의 명령 무시: %s", chat_id, text)
+        if chat_id not in self.allowed:
+            # 허용 목록이 비어 있으면 아무에게도 응답하지 않는다(모르는 사람의 /random으로 비용이 나가지 않게).
+            log.warning("허용되지 않은 chat %s의 명령 무시: %s (본인이라면 TELEGRAM_CHAT_ID에 이 값을 넣으세요)",
+                        chat_id, text)
             return
         command = text.split()[0][1:].split("@")[0].lower()
         log.info("명령 수신 chat=%s: /%s", chat_id, command)
@@ -112,6 +114,10 @@ def main(argv: list[str] | None = None) -> int:
     if not settings.telegram_bot_token:
         log.error("TELEGRAM_BOT_TOKEN이 필요합니다.")
         return 2
+    if not settings.allowed_chat_ids:
+        # getUpdates를 호출하면 메시지가 '읽음' 처리되어 브라우저로 chat_id를 확인할 수 없게 되므로 아예 건너뛴다.
+        log.warning("TELEGRAM_CHAT_ID가 없어 명령 처리를 건너뜁니다.")
+        return 0
     tg = TelegramClient(settings.telegram_bot_token)
     bot = Bot(JazzService(settings), tg)
     state = settings.bot_state_path
