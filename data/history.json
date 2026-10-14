@@ -97,6 +97,61 @@
       },
       "generated_by": "template",
       "cycle": 1
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "daily",
+      "artist_id": "grover-washington-jr",
+      "artist": {
+        "name": "Grover Washington Jr.",
+        "active": "1970s–1999",
+        "instrument_detail": "색소폰",
+        "era": "fusion",
+        "era_ko": "퓨전",
+        "style": "재즈 펑크, 스무드 재즈"
+      },
+      "intro": "Grover Washington Jr.은(는) 퓨전 시대를 대표하는 색소폰 아티스트로, 재즈 펑크, 스무드 재즈 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Mister Magic",
+          "album": "Mister Magic",
+          "year": 1975,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=UbsbqkgzxWM"
+        },
+        {
+          "title": "Winelight",
+          "album": "Winelight",
+          "year": 1980,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=wPH1IuMtFGc"
+        },
+        {
+          "title": "Just the Two of Us",
+          "album": "Winelight",
+          "year": 1980,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=gelwwYuYGn0"
+        }
+      ],
+      "starter": {
+        "index": 1,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "1980년 Bill Withers가 노래한 Just the Two of Us는 팝 차트 2위까지 올랐고 그래미 R&B 노래상을 받았습니다. 스무드 재즈라는 장르가 대중화되는 데 결정적인 곡이었습니다.",
+        "link": {
+          "title": "Just the Two of Us (Grover Washington Jr. song)",
+          "url": "https://en.wikipedia.org/wiki/Just_the_Two_of_Us_(Grover_Washington_Jr._song)",
+          "lang": "en"
+        }
+      },
+      "wiki": {
+        "ko": "https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A1%9C%EB%B2%84_%EC%9B%8C%EC%8B%B1%ED%84%B4_%EC%A3%BC%EB%8B%88%EC%96%B4",
+        "en": "https://en.wikipedia.org/wiki/Grover_Washington_Jr."
+      },
+      "generated_by": "template",
+      "cycle": 1
     }
   ]
 }
