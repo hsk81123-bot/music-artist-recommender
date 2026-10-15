@@ -208,6 +208,60 @@
       },
       "generated_by": "template",
       "cycle": 1
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "random",
+      "artist_id": "art-blakey",
+      "artist": {
+        "name": "Art Blakey",
+        "active": "1940s–1990",
+        "instrument_detail": "드럼, 밴드리더",
+        "era": "hardbop",
+        "era_ko": "하드밥",
+        "style": "하드밥"
+      },
+      "intro": "Art Blakey은(는) 하드밥 시대를 대표하는 드럼, 밴드리더 아티스트로, 하드밥 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Moanin'",
+          "album": "Moanin'",
+          "year": 1958,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=fsJ3JjpZyoA"
+        },
+        {
+          "title": "Blues March",
+          "album": "Moanin'",
+          "year": 1958,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=Rld0xn9tBkM"
+        },
+        {
+          "title": "A Night in Tunisia",
+          "album": "A Night in Tunisia",
+          "year": 1961,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=vAjPsmJD7nI"
+        }
+      ],
+      "starter": {
+        "index": 0,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "Blakey의 Jazz Messengers는 30년 넘게 이어지며 '하드밥 대학'이라 불렸습니다. Lee Morgan, Wayne Shorter, Freddie Hubbard부터 Wynton Marsalis까지 수많은 거장이 이 밴드를 거쳐 갔습니다.",
+        "link": {
+          "title": "The Jazz Messengers",
+          "url": "https://en.wikipedia.org/wiki/The_Jazz_Messengers",
+          "lang": "en"
+        }
+      },
+      "wiki": {
+        "ko": "https://ko.wikipedia.org/wiki/%EC%95%84%ED%8A%B8_%EB%B8%94%EB%9E%98%ED%82%A4",
+        "en": "https://en.wikipedia.org/wiki/Art_Blakey"
+      },
+      "generated_by": "template"
     }
   ]
 }
