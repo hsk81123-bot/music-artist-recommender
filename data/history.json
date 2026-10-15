@@ -262,6 +262,64 @@
         "en": "https://en.wikipedia.org/wiki/Art_Blakey"
       },
       "generated_by": "template"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "daily",
+      "artist_id": "tony-williams",
+      "artist": {
+        "name": "Tony Williams",
+        "active": "1960s–1997",
+        "instrument_detail": "드럼",
+        "era": "fusion",
+        "era_ko": "퓨전",
+        "style": "재즈 록 퓨전, 포스트밥"
+      },
+      "intro": "Tony Williams은(는) 퓨전 시대를 대표하는 드럼 아티스트로, 재즈 록 퓨전, 포스트밥 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Emergency!",
+          "album": "Emergency!",
+          "year": 1969,
+          "performer": "The Tony Williams Lifetime",
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=TtX2nrWKaTE"
+        },
+        {
+          "title": "Vashkar",
+          "album": "Emergency!",
+          "year": 1969,
+          "performer": "The Tony Williams Lifetime",
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=SpiA2deXDyQ"
+        },
+        {
+          "title": "Snake Oil",
+          "album": "Believe It",
+          "year": 1975,
+          "performer": "The New Tony Williams Lifetime",
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=pyw5fuBvfG4"
+        }
+      ],
+      "starter": {
+        "index": 0,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "Williams는 17세에 Miles Davis 퀸텟의 드러머가 됐습니다. 그 나이에 박자를 쪼개고 늘리는 그의 드럼은 퀸텟의 사운드를 근본부터 바꿔 놓았습니다.",
+        "link": {
+          "title": "토니 윌리엄스",
+          "url": "https://ko.wikipedia.org/wiki/%ED%86%A0%EB%8B%88_%EC%9C%8C%EB%A6%AC%EC%97%84%EC%8A%A4",
+          "lang": "ko"
+        }
+      },
+      "wiki": {
+        "ko": "https://ko.wikipedia.org/wiki/%ED%86%A0%EB%8B%88_%EC%9C%8C%EB%A6%AC%EC%97%84%EC%8A%A4",
+        "en": "https://en.wikipedia.org/wiki/Tony_Williams_(drummer)"
+      },
+      "generated_by": "template",
+      "cycle": 1
     }
   ]
 }
