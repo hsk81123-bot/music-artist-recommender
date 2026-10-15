@@ -152,6 +152,62 @@
       },
       "generated_by": "template",
       "cycle": 1
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "daily",
+      "artist_id": "kenny-dorham",
+      "artist": {
+        "name": "Kenny Dorham",
+        "active": "1940s–1972",
+        "instrument_detail": "트럼펫",
+        "era": "hardbop",
+        "era_ko": "하드밥",
+        "style": "하드밥"
+      },
+      "intro": "Kenny Dorham은(는) 하드밥 시대를 대표하는 트럼펫 아티스트로, 하드밥 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Una Mas",
+          "album": "Una Mas",
+          "year": 1963,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=NL6UL9XpxFY"
+        },
+        {
+          "title": "Lotus Blossom",
+          "album": "Quiet Kenny",
+          "year": 1959,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=89FvP_fi5TU"
+        },
+        {
+          "title": "Blue Bossa",
+          "album": "Page One",
+          "year": 1963,
+          "performer": "Joe Henderson",
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=EUxv3AAaK_Y"
+        }
+      ],
+      "starter": {
+        "index": 0,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "가장 유명한 재즈 스탠더드 중 하나인 Blue Bossa는 Dorham이 작곡해 1963년 Joe Henderson의 데뷔작 Page One에서 처음 발표됐습니다. 연주자로서보다 작곡가로서 더 오래 기억되는 경우입니다.",
+        "link": {
+          "title": "Blue Bossa",
+          "url": "https://en.wikipedia.org/wiki/Blue_Bossa",
+          "lang": "en"
+        }
+      },
+      "wiki": {
+        "ko": null,
+        "en": "https://en.wikipedia.org/wiki/Kenny_Dorham"
+      },
+      "generated_by": "template",
+      "cycle": 1
     }
   ]
 }
