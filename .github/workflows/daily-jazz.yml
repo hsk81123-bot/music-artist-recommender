@@ -1,10 +1,8 @@
 name: Daily Jazz
 
 on:
-  schedule:
-    # 매일 06:50 KST = 21:50 UTC (전날). GitHub cron은 정각 무렵 몇 분~수십 분 늦게 시작되는 일이 잦아
-    # 10분 일찍 걸어 두면 대개 7시 전후에 도착합니다. 시각을 바꾸려면 이 줄을 고치세요(UTC 기준).
-    - cron: "50 21 * * *"
+  # 예약 실행은 내 PC의 cron이 담당합니다(scripts/run_daily_local.sh).
+  # GitHub 예약 실행은 수 시간씩 늦어질 수 있어서 여기서는 수동 실행만 남겼습니다.
   workflow_dispatch:
     inputs:
       force:

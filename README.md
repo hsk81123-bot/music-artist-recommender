@@ -9,7 +9,7 @@
 - ytmusicapi로 링크를 찾고, 실패하면 YouTube Data API v3로 다시 찾습니다. 그래도 없으면 "링크 없음"으로 표시하고 발송은 그대로 진행합니다.
 - 봇 명령어: `/today`, `/random`, `/history`
 - (선택) 내 YouTube Music 계정의 **"Daily Jazz"** 플레이리스트에 매일 곡을 자동으로 추가합니다.
-- GitHub Actions cron으로 무료로 돌릴 수 있고, 로컬 PC나 서버의 cron으로도 실행할 수 있습니다.
+- 정기 발송은 내 PC의 예약 작업으로 돌립니다(7번). 봇 명령 처리는 GitHub Actions에서 무료로 돌아갑니다.
 
 ---
 
@@ -30,6 +30,8 @@
 │   ├── daily.py       # 매일 발송 진입점  (python -m jazzbot.daily)
 │   ├── bot.py         # 명령어 처리 진입점 (python -m jazzbot.bot)
 │   └── retry.py       # 지수 백오프 재시도
+├── scripts/
+│   └── run_daily_local.sh  # 내 PC에서 정기 발송 (cron / 작업 스케줄러가 호출)
 ├── data/
 │   ├── artists.json   # ★ 아티스트 큐레이션 (111명)
 │   ├── history.json   # 발송 기록 (자동 갱신·커밋)
@@ -37,7 +39,7 @@
 ├── examples/sample_entry.json   # 메시지 예시에 쓴 데이터
 ├── tests/test_jazzbot.py
 ├── .github/workflows/
-│   ├── daily-jazz.yml    # 매일 07:00 KST 무렵 발송
+│   ├── daily-jazz.yml    # 수동 실행용 (정기 발송은 내 PC에서)
 │   ├── bot-commands.yml  # 30분마다 쌓인 봇 명령 처리
 │   ├── verify-data.yml   # 큐레이션의 위키백과 제목 검증
 │   └── tests.yml
@@ -154,24 +156,50 @@ pip install -r requirements-dev.txt && pytest -q   # 단위 테스트
    같은 화면의 **Variables** 탭에는 필요할 때만 `YTMUSIC_PLAYLIST_ID`, `TELEGRAM_ALLOWED_CHAT_IDS`를 등록합니다.
 3. **Settings → Actions → General → Workflow permissions**를 **Read and write permissions**로 설정합니다. 워크플로가 `data/history.json`을 커밋해야 하기 때문입니다.
 4. **Actions 탭 → Daily Jazz → Run workflow**로 한 번 수동 실행해서 메시지가 오는지 확인합니다.
-5. 이후에는 매일 `50 21 * * *`(UTC), 즉 **06:50 KST**에 실행이 예약됩니다. GitHub cron이 보통 몇 분 늦게 시작하므로 7시 전후에 도착합니다. 시각을 바꾸려면 `.github/workflows/daily-jazz.yml`의 cron 값을 UTC 기준으로 고치세요(KST − 9시간).
+5. 정기 발송은 GitHub가 아니라 **내 PC의 예약 작업**이 맡습니다. 아래 7번을 설정하세요. 이 단계에서는 수동 실행으로 충분합니다.
 
 알아 두면 좋은 점:
-- GitHub cron은 부하에 따라 **수 분~수십 분 늦게** 시작될 수 있습니다. 정각 발송이 꼭 필요하면 아래의 서버 cron을 쓰세요.
+- 정기 발송은 PC가 켜져 있어야 합니다. 꺼져 있던 동안의 발송은 PC를 켠 뒤 다음 실행 때 한 번에 채워집니다.
 - `bot-commands.yml`은 30분마다 쌓인 `/today`, `/random`, `/history` 명령을 처리합니다. 응답이 늦을 수 있으니 즉시 응답이 필요하면 서버에서 `python -m jazzbot.bot`을 상시 실행하고, 이 워크플로는 Actions 탭에서 **Disable workflow**로 꺼 두세요(둘 다 켜 두면 명령을 서로 가져갑니다).
 - 비공개 저장소는 Actions 무료 사용 시간이 월 2,000분입니다. 30분 간격 폴링은 월 약 1,440분을 쓰니, 부족하면 cron 간격을 `0 * * * *`(매시)로 늘리세요. 공개 저장소는 무제한입니다.
 - 두 워크플로는 `concurrency: jazzbot-data`로 묶여 있어 기록 파일을 동시에 고치지 않습니다.
 
-### 7. 대안: 로컬 PC / 서버 cron
+### 7. 정기 발송: 내 PC에서 실행 (권장 설정)
 
-GitHub Actions 대신 직접 실행하는 경우입니다. 두 방식을 함께 쓰면 기록이 갈라지니 하나만 쓰세요.
+정기 발송은 `scripts/run_daily_local.sh`를 PC의 예약 작업으로 등록해서 돌립니다. 이 스크립트는 다음을 처리합니다.
+- 오늘 이미 보냈으면 바로 끝나므로, 하루에 여러 번 호출해도 중복으로 나가지 않습니다.
+- 발송 기록을 커밋해서 GitHub에 올립니다(`/today`, `/history` 명령이 이 기록을 씁니다).
+- 로그는 `logs/daily.log`에 쌓입니다.
 
-**Linux / macOS crontab** (`crontab -e`)
-```cron
-CRON_TZ=Asia/Seoul
-0 7 * * * cd /home/me/music-artist-recommender && .venv/bin/python -m jazzbot.daily >> daily.log 2>&1
+**준비 (한 번만)**
+```bash
+cd music-artist-recommender
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt     # Windows: .venv\Scripts\pip install -r requirements.txt
+cp .env.example .env     # TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, (선택) ANTHROPIC_API_KEY 입력
+chmod +x scripts/run_daily_local.sh
+scripts/run_daily_local.sh     # 지금 한 번 실행해서 메시지가 오는지 확인
 ```
-> `CRON_TZ`를 지원하지 않는 cron(macOS 등)에서는 서버 시간대 기준으로 시각을 적으세요. 서버가 UTC라면 `0 22 * * *`입니다.
+`git push`를 쓰므로 이 PC에서 GitHub에 push할 수 있어야 합니다(HTTPS 로그인 또는 SSH 키).
+
+**Linux / macOS**: `crontab -e`에 아래 두 줄을 추가합니다. 경로는 실제 위치로 바꾸세요.
+```cron
+# 7시부터 12시까지 매시간 확인(이미 보냈으면 바로 종료). 잠들었거나 꺼져 있던 경우도 다음 정각에 채워집니다.
+0 7-12 * * * /home/me/music-artist-recommender/scripts/run_daily_local.sh
+# 컴퓨터를 켤 때마다 한 번 실행해서, 꺼져 있던 동안 놓친 발송을 채웁니다.
+@reboot /home/me/music-artist-recommender/scripts/run_daily_local.sh
+```
+> 시스템 시간대가 한국 시간이 아니면 `crontab` 시각을 그에 맞게 바꾸세요.
+
+**Windows 작업 스케줄러**: "작업 만들기"로 작업을 하나 만듭니다.
+- 트리거 1: 매일 **07:00**, 고급 설정에서 "반복 간격 1시간", "기간 6시간"
+- 트리거 2: **사용자 로그온할 때**
+- 동작: 프로그램 `C:\Program Files\Git\bin\bash.exe`, 인수 `-lc "/c/Users/me/music-artist-recommender/scripts/run_daily_local.sh"` (경로는 실제 위치, Git Bash 필요)
+- 조건/설정: "예약된 시작 시간을 놓쳤으면 가능한 한 빨리 작업 시작", "작업을 실행하려면 컴퓨터 깨우기" 체크
+
+**확인과 문제 해결**
+- 로그: `logs/daily.log`. "종료 (코드 0)"이면 정상입니다.
+- 이미 보낸 날 다시 보내려면 `.venv/bin/python -m jazzbot.daily --force`를 직접 실행하세요.
+- 발송은 됐는데 GitHub에 기록이 안 올라갔다면 로그에 "발송 기록을 GitHub에 올리지 못했습니다"가 찍힙니다. 저장소에서 `git status`로 확인하세요.
 
 **봇 명령어 상시 실행 (systemd)**: `/etc/systemd/system/daily-jazz-bot.service`
 ```ini
@@ -194,7 +222,6 @@ sudo systemctl enable --now daily-jazz-bot
 journalctl -u daily-jazz-bot -f    # 로그 확인
 ```
 
-**Windows 작업 스케줄러**: "기본 작업 만들기" → 매일 08:00 → 프로그램 `C:\...\music-artist-recommender\.venv\Scripts\python.exe`, 인수 `-m jazzbot.daily`, 시작 위치는 저장소 폴더로 지정합니다.
 
 ---
 
