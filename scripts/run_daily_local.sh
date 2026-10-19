@@ -6,6 +6,10 @@
 # - 발송 기록(data/history.json)은 커밋해서 GitHub에 올린다. /today, /history 명령이 이 기록을 쓰기 때문이다.
 set -u
 
+# cron에는 입력할 사람이 없으므로 git이 로그인 정보를 묻지 않고 바로 실패하게 한다.
+# 인증 정보는 미리 한 번 터미널에서 git pull 하면서 키체인에 저장해 둔다(README 7번).
+export GIT_TERMINAL_PROMPT=0
+
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO" || exit 1
 mkdir -p logs
@@ -40,7 +44,7 @@ if ! [ -x "$PY" ] && ! command -v "$PY" >/dev/null 2>&1; then
 fi
 echo "Python: $PY"
 
-git pull --rebase -q origin main || echo "경고: git pull 실패(오프라인일 수 있음). 현재 코드로 진행합니다."
+git pull --rebase -q origin main || echo "경고: git pull 실패(오프라인이거나 GitHub 인증이 저장되지 않음). 현재 코드로 진행합니다."
 
 "$PY" -m jazzbot.daily
 status=$?
@@ -48,6 +52,11 @@ status=$?
 if [ -n "$(git status --porcelain data/)" ]; then
   git add -A data/
   git commit -q -m "chore: daily jazz history $(TZ=Asia/Seoul date +%F) (local)"
+fi
+
+# 이번에 만든 커밋뿐 아니라, 이전 실행에서 올리지 못한 커밋도 함께 올린다.
+ahead="$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)"
+if [ "$ahead" -gt 0 ]; then
   pushed=0
   for i in 1 2 3; do
     if git pull --rebase -q origin main && git push -q origin HEAD:main; then
@@ -56,7 +65,7 @@ if [ -n "$(git status --porcelain data/)" ]; then
     fi
     sleep $((i * 5))
   done
-  [ "$pushed" = 1 ] || echo "오류: 발송 기록을 GitHub에 올리지 못했습니다. 저장소에서 git status를 확인하세요."
+  [ "$pushed" = 1 ] || echo "오류: 발송 기록을 GitHub에 올리지 못했습니다(커밋 ${ahead}개 대기). GitHub 인증을 확인하세요. 다음 실행 때 다시 시도합니다."
 fi
 
 echo "=== $(date '+%F %T') 종료 (코드 $status)"
