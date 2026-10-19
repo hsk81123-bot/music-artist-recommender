@@ -12,13 +12,33 @@ mkdir -p logs
 exec >>logs/daily.log 2>&1
 echo "=== $(date '+%F %T') 시작"
 
-if [ -x .venv/bin/python ]; then
-  PY=.venv/bin/python
-elif [ -x .venv/Scripts/python.exe ]; then
-  PY=.venv/Scripts/python.exe
-else
-  PY=python3
+# 사용할 Python 찾기: ① JAZZBOT_PYTHON(환경변수 또는 .env) ② conda 환경 "jazzbot" ③ .venv ④ python3
+# cron은 conda 환경을 활성화하지 않으므로 환경 안의 python 경로를 직접 쓴다.
+PY="${JAZZBOT_PYTHON:-}"
+if [ -z "$PY" ] && [ -f .env ]; then
+  PY="$(grep -E '^JAZZBOT_PYTHON=' .env | tail -1 | cut -d= -f2- | tr -d '"'"'"' ')"
 fi
+PY="${PY/#\~/$HOME}"
+if [ -z "$PY" ]; then
+  for base in "$HOME/miniconda3" "$HOME/miniforge3" "$HOME/anaconda3" "$HOME/opt/miniconda3" \
+              "/opt/homebrew/Caskroom/miniconda/base" "/opt/miniconda3"; do
+    if [ -x "$base/envs/jazzbot/bin/python" ]; then PY="$base/envs/jazzbot/bin/python"; break; fi
+  done
+fi
+if [ -z "$PY" ]; then
+  if [ -x .venv/bin/python ]; then
+    PY=.venv/bin/python
+  elif [ -x .venv/Scripts/python.exe ]; then
+    PY=.venv/Scripts/python.exe
+  else
+    PY=python3
+  fi
+fi
+if ! [ -x "$PY" ] && ! command -v "$PY" >/dev/null 2>&1; then
+  echo "오류: Python을 찾을 수 없습니다: $PY"
+  exit 1
+fi
+echo "Python: $PY"
 
 git pull --rebase -q origin main || echo "경고: git pull 실패(오프라인일 수 있음). 현재 코드로 진행합니다."
 

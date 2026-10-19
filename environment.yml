@@ -1,0 +1,11 @@
+# Miniconda 환경: conda env create -f environment.yml
+# conda-forge만 써서 Anaconda 기본 채널의 약관 동의나 라이선스 문제를 피합니다.
+name: jazzbot
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt
