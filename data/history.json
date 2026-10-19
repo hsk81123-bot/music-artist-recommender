@@ -320,6 +320,61 @@
       },
       "generated_by": "template",
       "cycle": 1
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "daily",
+      "artist_id": "billie-holiday",
+      "artist": {
+        "name": "Billie Holiday",
+        "active": "1930s–1959",
+        "instrument_detail": "보컬",
+        "era": "swing",
+        "era_ko": "스윙",
+        "style": "스윙, 재즈 보컬"
+      },
+      "intro": "Billie Holiday은(는) 스윙 시대를 대표하는 보컬 아티스트로, 스윙, 재즈 보컬 스타일로 잘 알려져 있습니다. 오늘은 대표곡 세 곡으로 그 음악 세계를 만나 보세요.",
+      "tracks": [
+        {
+          "title": "Strange Fruit",
+          "album": "Single",
+          "year": 1939,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=2XT21bStVFU"
+        },
+        {
+          "title": "God Bless the Child",
+          "album": "Single",
+          "year": 1941,
+          "point": "",
+          "url": "https://music.youtube.com/watch?v=pAyoDugu4JY"
+        },
+        {
+          "title": "I'm a Fool to Want You",
+          "album": "Lady in Satin",
+          "year": 1958,
+          "point": "",
+          "url": null
+        }
+      ],
+      "starter": {
+        "index": 1,
+        "reason": "아티스트의 개성이 가장 잘 드러나는 곡이라 첫 감상으로 좋습니다."
+      },
+      "story": {
+        "text": "흑인 린치를 고발하는 Strange Fruit는 소속 음반사 Columbia가 녹음을 거부했습니다. Holiday는 작은 레이블 Commodore에서 이 곡을 녹음했고, 곡은 훗날 민권운동의 상징적인 노래가 됐습니다.",
+        "link": {
+          "title": "Strange Fruit",
+          "url": "https://en.wikipedia.org/wiki/Strange_Fruit",
+          "lang": "en"
+        }
+      },
+      "wiki": {
+        "ko": "https://ko.wikipedia.org/wiki/%EB%B9%8C%EB%A6%AC_%ED%99%80%EB%A6%AC%EB%8D%B0%EC%9D%B4",
+        "en": "https://en.wikipedia.org/wiki/Billie_Holiday"
+      },
+      "generated_by": "template",
+      "cycle": 1
     }
   ]
 }
