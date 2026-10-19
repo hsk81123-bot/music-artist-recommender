@@ -1,6 +1,6 @@
 # 🎷 Daily Jazz — 매일 아침 재즈 아티스트 한 명을 소개하는 텔레그램 봇
 
-매일 오전 7시(KST) 무렵에 재즈 아티스트 한 명을 골라 **소개 · 대표곡 3곡 · YouTube Music 링크**를 텔레그램으로 보내 줍니다.
+매일 오전 5시(KST)에 재즈 아티스트 한 명을 골라 **소개 · 대표곡 3곡 · YouTube Music 링크**를 텔레그램으로 보내 줍니다.
 
 - **111명**의 큐레이션 목록: 시대 8개(스윙, 비밥, 쿨, 하드밥, 모달, 프리, 퓨전, 현대 재즈) × 악기 7개(색소폰, 트럼펫, 피아노, 보컬, 베이스, 드럼, 기타)
 - 목록을 다 돌기 전까지는 같은 아티스트가 다시 나오지 않고, 시대나 악기가 전날과 겹치지 않게 고릅니다.
@@ -183,15 +183,16 @@ scripts/run_daily_local.sh     # 지금 한 번 실행해서 메시지가 오는
 
 **Linux / macOS**: `crontab -e`에 아래 두 줄을 추가합니다. 경로는 실제 위치로 바꾸세요.
 ```cron
-# 7시부터 12시까지 매시간 확인(이미 보냈으면 바로 종료). 잠들었거나 꺼져 있던 경우도 다음 정각에 채워집니다.
-0 7-12 * * * /home/me/music-artist-recommender/scripts/run_daily_local.sh
+# 5시부터 12시까지 매시간 확인(이미 보냈으면 바로 종료). 잠들었거나 꺼져 있던 경우도 다음 정각에 채워집니다.
+0 5-12 * * * /home/me/music-artist-recommender/scripts/run_daily_local.sh
 # 컴퓨터를 켤 때마다 한 번 실행해서, 꺼져 있던 동안 놓친 발송을 채웁니다.
 @reboot /home/me/music-artist-recommender/scripts/run_daily_local.sh
 ```
 > 시스템 시간대가 한국 시간이 아니면 `crontab` 시각을 그에 맞게 바꾸세요.
+> macOS에서 5시에 PC가 잠자기 상태라면 `sudo pmset repeat wakeorpoweron MTWRFSU 04:58:00`으로 4시 58분에 깨어나게 할 수 있습니다.
 
 **Windows 작업 스케줄러**: "작업 만들기"로 작업을 하나 만듭니다.
-- 트리거 1: 매일 **07:00**, 고급 설정에서 "반복 간격 1시간", "기간 6시간"
+- 트리거 1: 매일 **05:00**, 고급 설정에서 "반복 간격 1시간", "기간 8시간"
 - 트리거 2: **사용자 로그온할 때**
 - 동작: 프로그램 `C:\Program Files\Git\bin\bash.exe`, 인수 `-lc "/c/Users/me/music-artist-recommender/scripts/run_daily_local.sh"` (경로는 실제 위치, Git Bash 필요)
 - 조건/설정: "예약된 시작 시간을 놓쳤으면 가능한 한 빨리 작업 시작", "작업을 실행하려면 컴퓨터 깨우기" 체크
