@@ -32,6 +32,7 @@
 │   └── retry.py       # 지수 백오프 재시도
 ├── scripts/
 │   └── run_daily_local.sh  # 내 PC에서 정기 발송 (cron / 작업 스케줄러가 호출)
+├── environment.yml          # Miniconda 환경 정의
 ├── data/
 │   ├── artists.json   # ★ 아티스트 큐레이션 (111명)
 │   ├── history.json   # 발송 기록 (자동 갱신·커밋)
@@ -171,14 +172,35 @@ pip install -r requirements-dev.txt && pytest -q   # 단위 테스트
 - 발송 기록을 커밋해서 GitHub에 올립니다(`/today`, `/history` 명령이 이 기록을 씁니다).
 - 로그는 `logs/daily.log`에 쌓입니다.
 
-**준비 (한 번만)**
+**준비 (한 번만) — Miniconda 사용 (권장)**
+```bash
+# 1) Miniconda 설치 (이미 있으면 건너뜀). Apple Silicon Mac 기준이고, Intel Mac이면 arm64 대신 x86_64
+curl -fsSL -o ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash ~/miniconda.sh -b -p ~/miniconda3 && rm ~/miniconda.sh
+~/miniconda3/bin/conda init zsh        # 터미널을 새로 열면 conda 명령을 쓸 수 있습니다
+
+# 2) 저장소 받기와 conda 환경 "jazzbot" 만들기
+git clone https://github.com/hsk81123-bot/music-artist-recommender.git
+cd music-artist-recommender
+~/miniconda3/bin/conda env create -f environment.yml
+
+# 3) 키 입력 후 한 번 실행
+cp .env.example .env     # TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, (선택) ANTHROPIC_API_KEY 입력
+scripts/run_daily_local.sh && tail -20 logs/daily.log
+```
+- `scripts/run_daily_local.sh`는 conda 환경 `jazzbot`을 자동으로 찾아 그 안의 Python으로 실행합니다(`~/miniconda3`, `~/miniforge3`, `~/anaconda3` 등). cron에서는 `conda activate`가 동작하지 않기 때문입니다.
+- 다른 위치나 다른 이름의 환경을 쓰려면 `.env`에 `JAZZBOT_PYTHON=~/경로/envs/환경이름/bin/python`을 지정하세요.
+- `environment.yml`은 conda-forge 채널만 써서 Anaconda 기본 채널의 약관 동의나 라이선스 문제를 피합니다.
+- 나중에 패키지가 바뀌면 `conda env update -n jazzbot -f environment.yml`로 업데이트합니다.
+
+**준비 — conda 없이 venv 사용**
 ```bash
 cd music-artist-recommender
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt     # Windows: .venv\Scripts\pip install -r requirements.txt
-cp .env.example .env     # TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, (선택) ANTHROPIC_API_KEY 입력
-chmod +x scripts/run_daily_local.sh
-scripts/run_daily_local.sh     # 지금 한 번 실행해서 메시지가 오는지 확인
+cp .env.example .env
+scripts/run_daily_local.sh
 ```
+
 `git push`를 쓰므로 이 PC에서 GitHub에 push할 수 있어야 합니다(HTTPS 로그인 또는 SSH 키).
 
 **Linux / macOS**: `crontab -e`에 아래 두 줄을 추가합니다. 경로는 실제 위치로 바꾸세요.
