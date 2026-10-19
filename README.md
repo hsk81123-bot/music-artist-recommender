@@ -201,7 +201,14 @@ cp .env.example .env
 scripts/run_daily_local.sh
 ```
 
-`git push`를 쓰므로 이 PC에서 GitHub에 push할 수 있어야 합니다(HTTPS 로그인 또는 SSH 키).
+**GitHub 인증 저장 (한 번만, 비공개 저장소)**: 스크립트는 발송 기록을 `git push`하는데, cron에서는 로그인 정보를 입력할 수 없습니다. 그래서 미리 macOS 키체인에 저장해 둬야 합니다.
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+   - Repository access: **Only select repositories** → `music-artist-recommender`
+   - Permissions → Repository permissions → **Contents: Read and write**
+2. 저장소 폴더에서 `git config --global credential.helper osxkeychain` 후 `git pull`을 실행합니다.
+   - Username: GitHub 사용자명(이메일 아님)
+   - Password: 1번에서 만든 토큰(GitHub 비밀번호 아님, 입력해도 화면에 안 보임)
+3. 다시 `git pull`을 했을 때 아무것도 묻지 않으면 저장된 것입니다. 토큰이 만료되면 1~2번을 다시 하세요.
 
 **Linux / macOS**: `crontab -e`에 아래 두 줄을 추가합니다. 경로는 실제 위치로 바꾸세요.
 ```cron
